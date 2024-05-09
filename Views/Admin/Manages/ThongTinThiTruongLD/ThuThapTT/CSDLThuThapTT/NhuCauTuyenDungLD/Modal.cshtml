@@ -1,0 +1,61 @@
+﻿@{
+    var Tinh = (IEnumerable<QLViecLam.Models.Admin.Systems.DmHanhChinh>)ViewData["Tinh"]!;
+    var Huyen = (IEnumerable<QLViecLam.Models.Admin.Systems.DmHanhChinh>)ViewData["Huyen"]!;
+    var Xa = (IEnumerable<QLViecLam.Models.Admin.Systems.DmHanhChinh>)ViewData["Xa"]!;
+    var DmLoaiHinhHdkt = (IEnumerable<QLViecLam.Models.Admin.Manages.DanhMuc.DmLoaiHinhHdkt>)ViewData["DmLoaiHinhHdkt"]!;
+}
+@section custom_script{
+
+}
+
+<!--print Modal-->
+<div class="modal fade" id="Print_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="card-label text-dark">
+                    Danh sách
+                </h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row text-left">
+                    <a class="btn btn-light-default font-weight-bold" asp-controller="NhuCauTuyenDungLD" asp-action="Print" target="_blank">Mẫu số 01 - TT 11/2022/TT-BLĐTBXH</a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-default font-weight-bold" data-dismiss="modal">Hủy thao tác</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+</script>
+<script>
+
+    function getListXa() {
+        var mahuyen = document.getElementById("huyen_create").value;
+        var maxa = document.getElementById("xa_create");
+
+        maxa.innerHTML = "";
+        fetch(`/DanhsachDN/GetXa?mahuyen=${mahuyen}`)
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(function (item) {
+                    var option = document.createElement("option");
+                    option.value = item.maquocgia;
+                    option.text = item.name;
+                    maxa.add(option);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+
+    }
+
+    function SetPrint(id) {
+        document.getElementById("id_print1").value = id;
+    }
+
+</script>

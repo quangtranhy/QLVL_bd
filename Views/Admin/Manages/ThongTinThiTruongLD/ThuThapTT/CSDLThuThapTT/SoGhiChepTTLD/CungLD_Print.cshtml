@@ -1,0 +1,395 @@
+﻿@{
+    Layout = "_LayoutPrint";
+    var record_id = 1;
+    var DmLoaiHinhHdkt = (IEnumerable<QLViecLam.Models.Admin.Manages.DanhMuc.DmLoaiHinhHdkt>)ViewData["DmLoaiHinhHdkt"]!;
+}
+
+
+<table id="data_header" style="font-size: 12px;width:72%">
+    <tbody>
+        <tr>
+            <td colspan="3" style="text-align: left">
+                Tỉnh/thành phố:........................................<br>
+                Quận/huyện/thị xã:.....................................<br>
+                Xã/phường/thị trấn:....................................<br>
+                Thôn (bản, ấp, tổ dân phố và tương đương):.............<br>
+                Quyển số:..............................................
+            </td>
+            <td style="text-align: right;">
+                <br />
+                <br />
+                <br />
+                <br />
+                (Phường/Thị trấn=1; Xã=2)
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <p style="text-align: center;font-weight: bold;font-size: 20px; text-transform: uppercase;">
+                    SỔ GHI CHÉP THÔNG TIN THỊ TRƯỜNG LAO ĐỘNG PHẦN CUNG LAO ĐỘNG<br>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <p style="text-align: center">
+                    (Ban hành theo Thông tư số 27/2015/TT-LĐTBXH ngày 24/7/2015 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội 
+                    hướng dẫn thu thập, lưu trữ, tổng hợp thông tin thị trường lao động)
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<table id="data_body" cellspacing="0" cellpadding="0" border="1" style="font-size: 12px;width:72%">
+    <tbody>
+        <tr>
+            <td colspan="6"></td>
+            <td colspan="3">Năm……</td>
+            <td colspan="3">Năm……</td>
+            <td colspan="3">Năm……</td>
+        </tr>
+        <tr>
+            <td colspan="6">Họ và tên người ghi sổ</td>
+            <td colspan="3"></td>
+            <td colspan="3"></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Địa chỉ liên hệ</td>
+            <td colspan="3"></td>
+            <td colspan="3"></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Số điện thoại</td>
+            <td colspan="3"></td>
+            <td colspan="3"></td>
+            <td colspan="3"></td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<table id="data_body" style="font-size: 12px;width:72%">
+    <tbody>
+        <tr>
+            <td colspan="3" style="text-align: left"><b>THÔNG TIN CƠ BẢN CỦA HỘ...................</td>
+            <td style="text-align: left;"><b>Mã số hộ.................</b></td>
+            <td style="text-align: left;"><b>Sổ hộ khẩu.................</b></td>
+            <td style="text-align: left;"><b>Sổ tạm trú.................</b></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: left"><b>ĐỊA CHỈ  CỦA HỘ...................</b></td>
+        </tr>
+    </tbody>
+</table>
+<br />  
+<table id="data_body" cellspacing="0" cellpadding="0" border="1" style="font-size: 12px;width:72%">
+    <colgroup>
+        <col width="74" style="mso-width-alt:2368;width:56pt">
+        <col width="52" style="mso-width-alt:1664;width:39pt">
+        <col width="78" style="mso-width-alt:2496;width:59pt">
+        <col width="116" style="mso-width-alt:3712;width:87pt">
+        <col width="98" style="mso-width-alt:3136;width:74pt">
+        <col width="104" style="mso-width-alt:3328;width:78pt">
+        <col width="115" style="mso-width-alt:3680;width:86pt">
+        <col width="51" style="mso-width-alt:1632;width:38pt">
+        <col width="116" style="mso-width-alt:3712;width:87pt">
+        <col width="75" style="mso-width-alt:2400;width:56pt">
+        <col width="156" style="mso-width-alt:4992;width:117pt">
+        <col width="66" style="mso-width-alt:2112;width:50pt">
+        <col width="116" style="mso-width-alt:3712;width:87pt">
+        <col width="62" style="mso-width-alt:1984;width:47pt">
+        <col width="192" span="3" style="mso-width-alt:6144;
+ width:144pt">
+        <col width="108" style="mso-width-alt:3456;width:81pt">
+        <col width="134" style="mso-width-alt:4288;width:101pt">
+        <col width="117" style="mso-width-alt:3744;width:88pt">
+        <col width="103" style="mso-width-alt:3296;width:77pt">
+        <col width="130" style="mso-width-alt:4160;width:98pt">
+        <col width="103" style="mso-width-alt:3296;width:77pt">
+    </colgroup>
+    <tbody>
+        <tr height="21" style="height:15.75pt">
+            <td rowspan="5" height="132" class="xl9518284" width="74" style="height:99.0pt;
+  width:56pt">
+                Thời điểm ghi chép<span style="mso-spacerun:yes">&nbsp;</span>
+            </td>
+            <td rowspan="5" class="xl11618284" width="52" style="width:39pt">STT</td>
+            <td colspan="2" rowspan="5" class="xl11718284" width="194" style="width:146pt">
+                Họ
+                và tên những người có tên trong sổ hộ khẩu
+                hoặc sổ tạm trú của hộ
+            </td>
+            <td rowspan="5" class="xl9418284" width="98" style="width:74pt">
+                Quan hệ
+                với chủ hộ
+            </td>
+            <td rowspan="5" class="xl9418284" width="104" style="width:78pt">
+                Giới tính
+                (Nam/ Nữ)
+            </td>
+            <td rowspan="5" class="xl9418284" width="115" style="width:86pt">
+                Ngày/tháng/năm
+                sinh
+            </td>
+            <td rowspan="5" class="xl9418284" width="51" style="width:38pt">Dân tộc</td>
+            <td rowspan="5" class="xl9418284" width="116" style="width:87pt">
+                Trình
+                độ giáo dục phổ thông cao nhất
+            </td>
+            <td colspan="5" rowspan="3" class="xl9418284" width="475" style="width:357pt">
+                Trình
+                độ chuyên môn<br>
+                <span style="mso-spacerun:yes">&nbsp;</span>kỹ thuật cao nhất
+                (Ghi lĩnh vực đào tạo cụ thể)
+            </td>
+            <td colspan="7" class="xl10418284" style="border-left:none">
+                Đối
+                với người tham gia hoạt động kinh tế
+            </td>
+            <td rowspan="5" class="xl11818284" width="130" style="width:98pt">
+                Đối
+                với người không tham gia hoạt động kinh
+                tế (ghi nguyên nhân cụ thể)
+            </td>
+            <td rowspan="5" class="xl9418284" width="103" style="width:77pt">Ghi chú</td>
+        </tr>
+        <tr height="23" style="mso-height-source:userset;height:17.25pt">
+            <td colspan="5" height="23" class="xl10618284" width="818" style="border-right:.5pt solid black;
+  height:17.25pt;border-left:none;width:614pt">
+                Đối với
+                người có việc làm
+            </td>
+            <td colspan="2" class="xl10918284" style="border-right:.5pt solid black;
+  border-left:none">
+                Đối với người thất
+                nghiệp
+            </td>
+        </tr>
+        <tr height="23" style="mso-height-source:userset;height:17.25pt">
+            <td rowspan="3" height="88" class="xl11118284" width="192" style="border-bottom:.5pt solid black;
+  height:66.0pt;border-top:none;width:144pt">
+                Công việc cụ thể
+                đang làm
+            </td>
+            <td colspan="2" class="xl9418284" width="384" style="border-left:none;width:288pt">
+                Nơi
+                làm việc
+            </td>
+            <td rowspan="3" class="xl11118284" width="108" style="border-bottom:.5pt solid black;
+  border-top:none;width:81pt">
+                Làm công ăn lương/Tự làm
+            </td>
+            <td rowspan="3" class="xl11118284" width="134" style="border-bottom:.5pt solid black;
+  border-top:none;width:101pt">
+                Loại hình kinh tế(Nhà
+                nước/Ngoài nhà nước/Vốn nước ngoài)
+            </td>
+            <td rowspan="3" class="xl11118284" width="117" style="border-bottom:.5pt solid black;
+  border-top:none;width:88pt">
+                Chưa bao giờ làm việc/Đã
+                từng làm việc
+            </td>
+            <td rowspan="3" class="xl11118284" width="103" style="border-bottom:.5pt solid black;
+  border-top:none;width:77pt">
+                Thời gian thất nghiệp (tháng)
+            </td>
+        </tr>
+        <tr height="24" style="mso-height-source:userset;height:18.0pt">
+            <td colspan="2" rowspan="2" height="65" class="xl9518284" width="231" style="height:
+  48.75pt;width:173pt">
+                Trình độ chuyên môn kỹ thuật cao
+                nhất
+            </td>
+            <td colspan="3" rowspan="2" class="xl9518284" width="244" style="width:184pt">
+                Lĩnh
+                vực giáo dục - đào tạo
+            </td>
+            <td rowspan="2" class="xl11418284" width="192" style="border-bottom:.5pt solid black;
+  width:144pt">
+                Tên và địa chỉ cơ quan/đơn
+                vị làm việc
+            </td>
+            <td rowspan="2" class="xl11918284" width="192" style="border-bottom:.5pt solid black;
+  width:144pt">
+                Ngành, nghề kinh doanh chính của cơ
+                quan/đơn vị làm việc
+            </td>
+        </tr>
+        <tr height="41" style="mso-height-source:userset;height:30.75pt">
+        </tr>
+        <tr height="20" style="height:15.0pt">
+            <td height="20" class="xl8018284" style="height:15.0pt;border-top:none">A</td>
+            <td class="xl8118284" style="border-top:none;border-left:none">B</td>
+            <td colspan="2" class="xl9618284" style="border-right:.5pt solid black;
+  border-left:none">
+                C
+            </td>
+            <td class="xl6718284" style="border-top:none;border-left:none">1</td>
+            <td class="xl6718284" style="border-top:none;border-left:none">2</td>
+            <td class="xl6718284" style="border-top:none;border-left:none">3</td>
+            <td class="xl6718284" style="border-top:none;border-left:none">4</td>
+            <td class="xl6718284" style="border-top:none;border-left:none">5</td>
+            <td colspan="2" class="xl9818284" style="border-right:.5pt solid black;
+  border-left:none">
+                6a
+            </td>
+            <td colspan="3" class="xl9818284" style="border-right:.5pt solid black;
+  border-left:none">
+                6b
+            </td>
+            <td class="xl6718284" style="border-top:none;border-left:none">7</td>
+            <td class="xl6718284" style="border-top:none;border-left:none">8a</td>
+            <td class="xl6718284" style="border-top:none;border-left:none">8b</td>
+            <td class="xl6718284" style="border-top:none;border-left:none">9</td>
+            <td class="xl6718284" style="border-top:none;border-left:none">10</td>
+            <td class="xl6718284" style="border-top:none;border-left:none">11</td>
+            <td class="xl6718284" style="border-top:none;border-left:none">12</td>
+            <td class="xl6718284" style="border-top:none;border-left:none">13</td>
+            <td class="xl6718284" style="border-top:none;border-left:none">14</td>
+        </tr>
+        <tr height="22" style="mso-height-source:userset;height:16.5pt">
+            <td height="22" class="xl6818284" style="height:16.5pt;border-top:none">&nbsp;</td>
+            <td class="xl6918284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl7018284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl7118284" style="border-top:none">&nbsp;</td>
+            <td class="xl7218284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl7218284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl7218284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl7218284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl7218284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td colspan="2" class="xl7218284" style="border-left:none">&nbsp;</td>
+            <td colspan="3" class="xl10118284" style="border-right:.5pt solid black;
+  border-left:none">
+                &nbsp;
+            </td>
+            <td class="xl7218284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl7218284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl7218284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl7218284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl7218284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl7218284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl7218284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl7218284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl6818284" style="border-top:none;border-left:none">&nbsp;</td>
+        </tr>
+        <tr height="22" style="mso-height-source:userset;height:16.5pt">
+            <td height="22" class="xl7518284" style="height:16.5pt">&nbsp;</td>
+            <td class="xl7618284" style="border-left:none">&nbsp;</td>
+            <td class="xl7718284" style="border-left:none">&nbsp;</td>
+            <td class="xl7818284">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td colspan="2" class="xl7418284" style="border-left:none">&nbsp;</td>
+            <td colspan="3" class="xl9118284" style="border-right:.5pt solid black;
+  border-left:none">
+                &nbsp;
+            </td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7418284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl7318284" style="border-top:none;border-left:none">&nbsp;</td>
+        </tr>
+        <tr height="22" style="mso-height-source:userset;height:16.5pt">
+            <td height="22" class="xl7518284" style="height:16.5pt">&nbsp;</td>
+            <td class="xl7618284" style="border-left:none">&nbsp;</td>
+            <td class="xl7718284" style="border-left:none">&nbsp;</td>
+            <td class="xl7818284">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td colspan="2" class="xl7418284" style="border-left:none">&nbsp;</td>
+            <td colspan="3" class="xl9118284" style="border-right:.5pt solid black;
+  border-left:none">
+                &nbsp;
+            </td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7918284" style="border-left:none">&nbsp;</td>
+            <td class="xl7418284" style="border-top:none;border-left:none">&nbsp;</td>
+            <td class="xl7318284" style="border-top:none;border-left:none">&nbsp;</td>
+        </tr>
+        <!--[if supportMisalignedColumns]-->
+        <tr height="0" style="display:none">
+            <td width="74" style="width:56pt"></td>
+            <td width="52" style="width:39pt"></td>
+            <td width="78" style="width:59pt"></td>
+            <td width="116" style="width:87pt"></td>
+            <td width="98" style="width:74pt"></td>
+            <td width="104" style="width:78pt"></td>
+            <td width="115" style="width:86pt"></td>
+            <td width="51" style="width:38pt"></td>
+            <td width="116" style="width:87pt"></td>
+            <td width="75" style="width:56pt"></td>
+            <td width="156" style="width:117pt"></td>
+            <td width="66" style="width:50pt"></td>
+            <td width="116" style="width:87pt"></td>
+            <td width="62" style="width:47pt"></td>
+            <td width="192" style="width:144pt"></td>
+            <td width="192" style="width:144pt"></td>
+            <td width="192" style="width:144pt"></td>
+            <td width="108" style="width:81pt"></td>
+            <td width="134" style="width:101pt"></td>
+            <td width="117" style="width:88pt"></td>
+            <td width="103" style="width:77pt"></td>
+            <td width="130" style="width:98pt"></td>
+            <td width="103" style="width:77pt"></td>
+        </tr>
+        <!--[endif]-->
+    </tbody>
+</table>
+<br />
+<table id="data_body" style="font-size: 12px;width:72%">
+    <tr>
+        <p style="text-align: center;font-weight: bold;font-size: 20px; text-transform: uppercase;">
+            BẢNG KÊ CÁC HỘ THUỘC THÔN/BẢN/ẤP, TỔ DÂN PHỐ VÀ TƯƠNG ĐƯƠNG<br>
+        </p>
+    </tr>
+    </table>
+
+<table id="data_body" cellspacing="0" cellpadding="0" border="1" style="font-size: 12px;width:72%">
+    <tbody>
+        <tr>
+            <td>Mã số hộ</td>
+            <td>Họ và tên chủ hộ </td>
+            <td>Địa chỉ hộ  </td>
+            <td>Ghi chú </td>
+        </tr>
+        <tr height="22">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+<table id="data_footer" width="96%" cellspacing="0" cellpadding="0" style="margin: 20px auto;text-align: center; height:200px">
+    <tbody>
+        <tr>
+            <td width="40%" style="text-align: left; vertical-align: top;">
+            </td>
+            <td style="vertical-align: top;">
+                <i>Ngày......tháng......năm...........</i><br>
+                <b>Người cung cấp thông tin</b><br>
+                <i>(Chữ ký, dấu)</i>
+            </td>
+        </tr>
+    </tbody>
+</table>

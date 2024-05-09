@@ -1,0 +1,277 @@
+﻿@model QLViecLam.Models.Admin.Manages.ThongTinThiTruongLD.NguoiLaoDong
+@section custom_style {
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.css" />
+}
+@section custom_script{
+    <script src="~/Admin/assets/js/pages/crud/forms/widgets/jquery-mask.js"></script>
+    <script src="~/Admin/assets/js/pages/crud/forms/widgets/select2.js"></script>
+
+    <script type="text/javascript" src="~/Admin/assets/datatables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.js"></script>
+    <script src="~/Admin/assets/datatables/scripts/table-managed.js"></script>
+    <script>
+        $(document).ready(function () {
+            TableManaged4.init();
+        });
+    </script>
+}
+<div class="card card-custom">
+    <div class="card-header ribbon ribbon-top ribbon-ver">
+        <div class="card-title">
+            <h3 class="card-label">
+                Thông tin <small>người lao động nước ngoài trên địa bàn tỉnh</small>
+            </h3>
+        </div>
+    </div>
+    <!--begin::Form-->
+    <form asp-controller="ThongTinNguoiNuocNgoai" asp-action="Update" method="post" enctype="multipart/form-data" id="frm_ThongTinNguoiNuocNgoai_update">
+        <div class="card-body">
+            <div class="mb-3 font-weight-bold font-size-lg">
+                <label style="color: blue; text-decoration-line: underline; font-weight: bold">Thông tin hồ sơ</label>
+            </div>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Họ tên</label>
+                        <input type="date" class="form-control" asp-for="HoTen" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Giới tính</label>
+                        <select class="form-control" asp-for="GioiTinh">
+                            <option value="Nam">Nam</option>
+                            <option value="Nữ">Nữ</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Ngày sinh</label>
+                        <input type="date" class="form-control" asp-for="NgaySinh" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Căn cước công dân</label>
+                        <input type="date" class="form-control" asp-for="Ccnd" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Dân tộc</label>
+                        <input type="text" class="form-control" asp-for="DanToc" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Quốc tịch</label>
+                        <input type="text" class="form-control" asp-for="Nation" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Huyện</label>
+                        <input type="text" class="form-control" asp-for="Huyen" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Xã</label>
+                        <input type="text" class="form-control" asp-for="Xa" />
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="form-group">
+                        <label>Địa chỉ</label>
+                        <input type="text" class="form-control" asp-for="Address" />
+                    </div>
+                </div><div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Số bảo hiểm</label>
+                        <input type="text" class="form-control" asp-for="SoBaoHiem" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Trình độ giáo dục</label>
+                        <select class="form-control" asp-for="TrinhDoGiaoDuc">
+                            <option value="1">Trình độ giáo dục 1</option>
+                            <option value="2">Trình độ giáo dục 2</option>
+                            <option value="3">Trình độ giáo dục 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Chuyên môn kĩ thuật</label>
+                        <select class="form-control" asp-for="TrinhDoCmkt">
+                            <option value="1">Chuyên môn kĩ thuật 1</option>
+                            <option value="2">Chuyên môn kĩ thuật 2</option>
+                            <option value="3">Chuyên môn kĩ thuật 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Nghề nghiệp</label>
+                        <input type="text" class="form-control" asp-for="NgheNghiep" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Lĩnh vực đào tạo</label>
+                        <input type="text" class="form-control" asp-for="LinhVucDaoTao" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Loại hợp đồng lao động</label>
+                        <input type="text" class="form-control" asp-for="LoaiHdld" />
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Bắt đầu hợp đồng</label>
+                        <input type="date" class="form-control" asp-for="BdHopDong" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Kết thúc hợp đồng</label>
+                        <input type="date" class="form-control" asp-for="KtHopDong" />
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Lương</label>
+                        <input type="text" class="form-control" asp-for="Luong" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Pc Chức vụ</label>
+                        <input type="text" class="form-control" asp-for="PcChucVu" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Thâm niên</label>
+                        <input type="text" class="form-control" asp-for="PcThamNien" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Thâm niên nghề</label>
+                        <input type="text" class="form-control" asp-for="PcThamNienNghe" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Pc Lương</label>
+                        <input type="text" class="form-control" asp-for="PcLuong" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Pc Bổ sung</label>
+                        <input type="text" class="form-control" asp-for="PcBoSung" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Bắt đầu độc hại</label>
+                        <input type="date" class="form-control" asp-for="BdDocHai" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Kết thúc độc hại</label>
+                        <input type="date" class="form-control" asp-for="KtDocHai" />
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Vị trí</label>
+                        <input type="text" class="form-control" asp-for="ViTri" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Chức vụ</label>
+                        <input type="text" class="form-control" asp-for="ChucVu" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Bắt đầu bảo hiểm xã hội</label>
+                        <input type="date" class="form-control" asp-for="BdBhxh" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Kết thúc bảo hiểm xã hội</label>
+                        <input type="date" class="form-control" asp-for="KtBhxh" />
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Lương bảo hiểm xã hội</label>
+                        <input type="text" class="form-control" asp-for="LuongBhxh" />
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="form-group">
+                        <label>Ghi chú</label>
+                        <input type="text" class="form-control" asp-for="GhiChu" />
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="form-group">
+                        <label>Doanh nghiệp</label>
+                        <input type="text" class="form-control" asp-for="Company" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-footer" style="text-align:center">
+            <a asp-controller="ThongTinNguoiNuocNgoai" asp-action="Index" asp-route-MaDonVi="" class="btn btn-danger">
+                <i class="la la-reply"></i>Quay lại
+            </a>&ensp;
+            <button type="reset" class="btn btn-secondary"><i class="la la-refresh"></i>Nhập lại</button>&ensp;
+            <button type="button" class="btn btn-primary mr-2" onclick="ValidateThongTinNguoiNuocNgoai()"><i class="la la-check"></i>Thêm mới</button>
+        </div>
+    </form>
+    <!--end::Form-->
+</div>
+<script>
+    function ValidateThongTinNguoiNuocNgoai() {
+        if ($('#Socv').val().trim() == '') {
+            toastr.error("Số công văn không được để trống!", "Lỗi!!!")
+        } else {
+            if ($('#Ngayhieuluc').val().trim() == '') {
+                toastr.error("Ngày thực hiện mức giá kê khai không được để trống!", "Lỗi!!!")
+            } else {
+                if ($('#Ngaycvlk').val().trim() == '') {
+                    toastr.error("Ngày nhập số công văn liền kề không được để trống!", "Lỗi!!!")
+                } else {
+                    document.getElementById("frm_ThongTinNguoiNuocNgoai_update").submit();
+                }
+            }
+        }
+    }
+</script>
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

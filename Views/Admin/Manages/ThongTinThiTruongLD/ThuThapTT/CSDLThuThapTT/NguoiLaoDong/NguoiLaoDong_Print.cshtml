@@ -1,0 +1,111 @@
+﻿@{
+    Layout = "_LayoutPrint";
+    var record_id = 1;
+    var DmLoaiHinhHdkt = (IEnumerable<QLViecLam.Models.Admin.Manages.DanhMuc.DmLoaiHinhHdkt>)ViewData["DmLoaiHinhHdkt"]!;
+}
+
+
+<table id="data_header" style="font-size: 12px">
+    <tbody>
+        <tr>
+            <td colspan="3" style="text-align: left">
+                Tỉnh/thành phố:.................................<br>
+                Quận/huyện/thị xã:............................<br>
+                Xã/phường/thị trấn:...........................
+            </td>
+            <td style="text-align: right;">
+                Mẫu số 02
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <p style="text-align: center;font-weight: bold;font-size: 20px; text-transform: uppercase;">
+                    PHIẾU THÔNG TIN VỀ NGƯỜI LAO ĐỘNG<br>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <p style="text-align: center">
+                    <i>(Thu thập thông tin người lao động từ 15 tuổi trở lên đang cư trú tại địa bàn)</i>
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<div style="padding-left: 30%;letter-spacing: 1px;">
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><strong><span style="color:black;"><span style="font-family:arial,sans-serif;">1. Họ, chữ đệm và tên khai sinh</span></span></strong><span style="color:black;"><span style="font-family:arial,sans-serif;">:</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">2. Ngày, tháng, năm sinh</span></span>: <span style="color:black;"><span style="font-family:arial,sans-serif;">□□ - □□ - □□□□&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>3. Giới tính</strong>:&nbsp; □ Nam □ Nữ</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><strong><span style="color:black;"><span style="font-family:arial,sans-serif;">4. Số CCCD/CMND<sup>(1)</sup>.................................. </span> 5. Mã số BHXH</span></strong><em><sup><span style="color:black;"><span style="font-family:arial,sans-serif;">(2)</span></span></sup></em><span style="color:black;"><span style="font-family:arial,sans-serif;">:&nbsp;&nbsp; </span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><strong><span style="color:black;"><span style="font-family:arial,sans-serif;">6. Nơi đăng ký thường trú<sup>(3)</sup>: </span></span></strong><span style="color:black;"><span style="font-family:arial,sans-serif;">............................................................................................ </span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><em><span style="color:black;"><span style="font-family:arial,sans-serif;">…………………………………….</span></span></em></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><strong><span style="color:black;"><span style="font-family:arial,sans-serif;">7. Nơi ở hiện <em>tại</em></span></span></strong><em><sup><span style="color:black;"><span style="font-family:arial,sans-serif;">(4)</span></span></sup></em><em><span style="color:black;"><span style="font-family:arial,sans-serif;"> (Chỉ thu thập nếu khác nơi đăng ký thường trú): ....................................... </span></span></em></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><em><span style="color:black;"><span style="font-family:arial,sans-serif;">…………………………………….</span></span></em></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><strong><span style="color:black;"><span style="font-family:arial,sans-serif;">8. Đối tượng ưu tiên </span></span></strong><span style="color:black;"><span style="font-family:arial,sans-serif;">(nếu có): □ Người khuyết tật □ Thuộc hộ nghèo □ Thuộc hộ cận nghèo</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">□ Thuộc hộ bị thu hồi đất&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; □ Thân nhân của người có công với cách mạng</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">□ Dân tộc thiểu số (ghi tên dân tộc):.................................................................................. </span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><strong><span style="color:black;"><span style="font-family:arial,sans-serif;">9. Trình độ giáo dục phổ thông cao nhất đã tốt nghiệp/đạt được</span></span></strong><span style="color:black;"><span style="font-family:arial,sans-serif;">:</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">□ Chưa học xong Tiểu học □ Tốt nghiệp Tiểu học □ Tốt nghiệp THCS □ Tốt nghiệp THPT</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><strong><span style="color:black;"><span style="font-family:arial,sans-serif;">10. Trình độ chuyên môn kỹ thuật cao nhất đạt được</span></span></strong><span style="color:black;"><span style="font-family:arial,sans-serif;">:</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">□ Chưa qua đào tạo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; □ CNKT không có bằng&nbsp;&nbsp; □ Chứng chỉ nghề dưới 3 tháng</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">□ Sơ cấp&nbsp;&nbsp; □ Trung cấp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; □ Cao đẳng&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; □ Đại học □ Trên đại học</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">10.1. Chuyên ngành đào <em>tạo<sup>(5)</sup>:............................................................................................ </em></span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><strong><span style="color:black;"><span style="font-family:arial,sans-serif;">11. Tình trạng tham gia hoạt động kinh tế:</span></span></strong></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">□ Người có việc làm<sup>(6)</sup> → Chuyển câu 11</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">□ Người thất nghiệp<sup>(7)</sup> → Chuyển câu 12</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">□ Không tham gia hoạt động kinh tế, lý do: □ Đi học □ Hưu trí □ Nội trợ □ Khuyết tật □ Khác</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><strong><span style="color:black;"><span style="font-family:arial,sans-serif;">12. Người có việc làm</span></span></strong><span style="color:black;"><span style="font-family:arial,sans-serif;">:</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">12.1. Vị thế việc làm: □Chủ cơ sở SXKD □Tự làm □Lao động gia đình □Làm công ăn lương □Xã viên HTX</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">12.2. Công việc cụ thể đang làm<sup>(8)</sup>:...................................................................................... </span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">a. <strong>Tham gia BHXH: </strong>□ Có <em>(Loại: □ Bắt buộc □ Tự nguyện)</em> □ Không</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><strong><span style="color:black;"><span style="font-family:arial,sans-serif;">b. Hợp đồng lao động </span></span></strong><span style="color:black;"><span style="font-family:arial,sans-serif;">(HĐLĐ): □ Có&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; □ Không</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">Loại hợp đồng lao động: □ HĐLĐ xác định thời hạn □ HĐLĐ không xác định thời hạn.</span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">Thời gian bắt đầu thực hiện HĐLĐ (ngày/tháng/năm):........ </span>/............ </span>/...........</p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">12.3. </span></span><span style="color:black;"><span style="font-family:arial,sans-serif;">Nơi làm <em>việc<sup>(9)</sup>:........................................................................................................... </em></span></span></p>
+
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">a. Loại hình nơi làm việc:</span></span></p>
+
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">□ Hộ nông, lâm nghiệp, thủy sản □ Cá nhân làm tự do □ Cơ sở kinh doanh cá thể □ Hợp tác xã</span></span></p>
+
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">□ Doanh nghiệp <em>(□ DNNhà nước □ DN ngoài Nhà nước □ DN</em></span></span><em><span style="color:black;"><span style="font-family:arial,sans-serif;">FDI)</span></span></em> <span style="color:black;"><span style="font-family:arial,sans-serif;">□ Khu vực nhà nước</span></span></p>
+
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">□ Đơn vị sự nghiệp ngoài nhà nước □ Khu vực nước ngoài □ Tổ chức đoàn thể khác</span></span></p>
+
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">b. Địa chỉ nơi làm việc<em><sup>(10)</sup></em>:.................................................................................................... </span></span></p>
+
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><strong><span style="color:black;"><span style="font-family:arial,sans-serif;">13. Người thất nghiệp</span></span></strong><span style="color:black;"><span style="font-family:arial,sans-serif;">: □ Chưa bao giờ làm việc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; □ Đã từng làm việc</span></span></p>
+
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;">13.1. Thời gian thất nghiệp: □ Dưới 3 tháng □ Từ 3 tháng đến 1 năm □ Trên 1 năm</span></span></p>
+
+    <p align="center" style="text-align:center;background:transparent;">&nbsp;</p>
+    <p align="center" style="margin-bottom:.0001pt;text-align:center;background:transparent;">&nbsp;</p>
+
+    
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;">- STT 8, 9, 10, 11, 12, 13: Đánh dấu X vào</span></span></span><span style="font-style:normal;"><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;"> □ </span></span></span></span><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;">tương ứng với nội dung trả lời.</span></span></span></p>
+</div>
+
+<table id="data_footer" width="96%" cellspacing="0" cellpadding="0" style="margin: 20px auto;text-align: center; height:100px">
+    <tbody>
+        <tr>
+            <td width="40%" style="text-align: left; vertical-align: top;">
+            </td>
+            <td style="vertical-align: top;">
+                <i>Ngày......tháng......năm...........</i><br>
+                <b>Người cung cấp thông tin</b><br>
+                <i>(Chữ ký, dấu)</i>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div style="padding:0 30%;">
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><strong><u><span style="font-style:normal;"><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;">Ghi chú</span></span></span></span></u></strong><strong><span style="font-style:normal;"><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;">:</span></span></span></span></strong></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><sup><span style="font-style:normal;"><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;">- (1)</span></span></span></span></sup> <span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;">Ghi số CCCD, trường hợp chưa có số CCCD thì ghi số CMND; <sup>(2)</sup> Ghi số trên thẻ BHYT đã được cơ quan BHXH cấp;</span></span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><sup><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;">- (3), (4), (10)</span></span></span></sup><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;"> Ghi rõ theo thứ tự số nhà, đường phố, xóm, làng; thôn, ấp, bản, buôn, phum, sóc; xã/phường/thị trấn; quận/huyện/thị xã/thành phố thuộc tỉnh; tỉnh/thành phố trực thuộc trung ương;</span></span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><sup><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;">- (5)</span></span></span></sup><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;"> Ghi chi tiết tên gọi mã cấp III của giáo dục, đào tạo theo quy định tại Phần I Phụ lục danh mục giáo dục, đào tạo của hệ thống giáo dục quốc dân tại Quyết định số 01/2017/QĐ-TTg ngày 17/01/2017 của Thủ tướng Chính phủ ban hành danh mục giáo dục, đào tạo của hệ thống giáo dục quốc dân;</span></span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;">- <sup>(6)</sup> Người có việc làm là người có làm bất cứ việc gì (không bị pháp luật cấm) để tạo ra các sản phẩm hàng hóa hoặc cung cấp các dịch vụ nhằm mục đích tạo thu nhập cho bản thân và gia đình;</span></span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><sup><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;">- (7)</span></span></span></sup><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;"> Người thất nghiệp là người đang không có việc làm, đang tìm kiếm việc làm và sẵn sàng làm việc;</span></span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><sup><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;">- (8)</span></span></span></sup><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;"> Ghi cụ thể tên công việc/nghề nghiệp đang làm theo mã nghề cấp 3 của Phụ lục I tại Quyết định số 34/2020/QĐ-TTg ngày 26/11/2020 của Thủ tướng Chính phủ ban hành Danh mục nghề nghiệp Việt Nam;</span></span></span></p>
+    <p style="margin-bottom:6.0pt;text-align:justify;text-indent:36.0pt;background:transparent;"><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;">- <sup>(9)</sup> Ghi tên cụ thể tên cụ thể của người sử dụng lao động (tên cơ quan/đơn vị/tổ chức/doanh nghiệp/hộ kinh doanh/hợp tác xã/cá nhân có thuê mướn). Trường hợp người lao động đánh dấu X vào</span></span></span><span style="font-style:normal;"><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;"> □ Tự làm </span></span></span></span><span style="color:black;"><span style="font-family:arial,sans-serif;"><span style="font-size:10.0pt;">ở câu 12.1 thì không ghi.</span></span></span></p>
+</div>

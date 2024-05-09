@@ -1,0 +1,312 @@
+﻿@{   
+    // // ViewData["model"] = "DANH SÁCH DOANH NGHIỆP";
+    var Tinh = (IEnumerable<QLViecLam.Models.Admin.Systems.DmHanhChinh>)ViewData["Tinh"]!;
+    var Huyen = (IEnumerable<QLViecLam.Models.Admin.Systems.DmHanhChinh>)ViewData["Huyen"]!;
+    var Xa = (IEnumerable<QLViecLam.Models.Admin.Systems.DmHanhChinh>)ViewData["Xa"]!;
+    var nghenghiep = (IEnumerable<QLViecLam.ViewModels.Admin.Manages.ThongTinThiTruongLD.ThuThapTT.HeThongTruyVanTT.VM_Count_Chucnang>)ViewData["nghenghiep"]!;
+    var thongtinkhac = (IEnumerable<QLViecLam.ViewModels.Admin.Manages.ThongTinThiTruongLD.ThuThapTT.HeThongTruyVanTT.VM_Thongtin_DoanhNghiep>)ViewData["thongtinkhac"]!;
+    var trinhdocmkt = (IEnumerable<QLViecLam.ViewModels.Admin.Manages.ThongTinThiTruongLD.ThuThapTT.HeThongTruyVanTT.VM_Count_Chucnang>)ViewData["trinhdocmkt"]!;
+    var linhvucdaotao = (IEnumerable<QLViecLam.ViewModels.Admin.Manages.ThongTinThiTruongLD.ThuThapTT.HeThongTruyVanTT.VM_Count_Chucnang>)ViewData["linhvucdaotao"]!;
+    var luong = (IEnumerable<QLViecLam.ViewModels.Admin.Manages.ThongTinThiTruongLD.ThuThapTT.HeThongTruyVanTT.VM_Luong_NguoiLaoDong>)ViewData["luong"]!;
+    int record_id = 1;
+}
+@section custom_style {
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.css" />
+}
+
+@section custom_script {
+    <script type="text/javascript" src="~/Admin/assets/datatables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.js"></script>
+    <script src="~/Admin/assets/datatables/scripts/table-managed.js"></script>
+    <script>
+        $(document).ready(function () {
+            TableManaged.init();
+        });
+
+
+    </script>
+}
+@model QLViecLam.Models.Admin.Manages.ThongTinThiTruongLD.Company
+<div class="card card-custom">
+    <div class="card-header flex-wrap border-0 pt-6 pb-0">
+        <div class="card-title">
+            <h3 class="card-label">
+                @ViewData["name"]
+            </h3>            
+        </div>
+        <div class="card-toolbar">
+            <a asp-action="XacThuc" asp-controller="TruyVanThongTinCauLaoDong" asp-route-Id="@Model.Id" class="btn btn-danger font-weight-bolder">Xác thực thông tin</a>
+        </div>
+    </div>
+    <hr />
+    <div class="card-body">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="form-group">
+                    <label>Mã số doanh nghiệp</label>
+                    <input type="text" class="form-control" asp-for="MaSoDn" />
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="form-group">
+                    <label>Mã số DKKD</label>
+                    <input type="text" class="form-control" asp-for="Dkkd" />
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="form-group">
+                    <label>Tình trạng hoạt động</label>
+                    <select type="text" class="form-control" asp-for="Public">
+                        <option value="1">Hoạt động</option>
+                        <option value="0">Dừng</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="form-group">
+                    <label>Số điện thoại</label>
+                    <input type="tel" class="form-control" asp-for="Phone" />
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="form-group">
+                    <label>Fax</label>
+                    <input type="text" class="form-control" asp-for="Fax" />
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="form-group">
+                    <label>Website</label>
+                    <input type="text" class="form-control" asp-for="Website" />
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" asp-for="Email" />
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="form-group">
+                    <label>Tỉnh</label>
+                    <select type="text" class="form-control" asp-for="Tinh">
+                        @if (Tinh != null)
+                        {
+                            foreach (var item in Tinh)
+                            {
+                                <option value="@item.MaQuocGia">@item.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="form-group">
+                    <label>Huyện/Thị xã/Thành phố</label>
+                    <select type="text" class="form-control" asp-for="Huyen">
+                        @if (Huyen != null)
+                        {
+                            foreach (var item in Huyen)
+                            {
+                                <option value="@item.MaQuocGia">@item.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="form-group">
+                    <label>Xã/Phường</label>
+                    <select type="text" class="form-control" asp-for="Xa">
+                        @if (Xa != null)
+                        {
+                            foreach (var item in Xa)
+                            {
+                                <option value="@item.MaQuocGia">@item.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-12">
+                <div class="form-group">
+                    <label>Địa chỉ</label>
+                    <input type="text" class="form-control" asp-for="Address" />
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="form-group">
+                    <label>Khu công nghiệp</label>
+                    <select type="text" class="form-control" asp-for="KhuCn">
+                        @foreach (var item in @Helpers.KhuCN())
+                        {
+                            <option value="@item.MaKhuCN">@item.TenKhuCN</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="form-group">
+                    <label>Ngành nghề</label>
+                    <select type="text" class="form-control" asp-for="NganhNghe">
+                        @foreach (var item in Helpers.NganhNgheKinhDoanh())
+                        {
+                            <option value="@item.MaNghanhNghe">@item.TenNghanhNghe</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="form-group">
+                    <label>Ảnh giấy DKKD</label>
+                    <input type="file" name="image" asp-for="Image" class="form-control">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card card-custom">
+    <div class="card-header flex-wrap border-0 pt-6 pb-0">
+        <div class="card-title">
+            <h3 class="card-label text-uppercase">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="color:#181C32">
+                    Thông tin khác<i class="icon-lg la la-eye text-warning" style="margin-left:12px"></i>
+                </a>
+            </h3>
+
+        </div>
+        <div class="card-toolbar">
+        </div>
+    </div>
+    <hr />
+    <div class="card-body" id="accordion">
+        <div class="panel-collapse collapse in" id="collapse1">
+            <div class="row">
+                @foreach (var item in thongtinkhac)
+                {
+                    <div class="col-xl-6">
+                        <div class="form-group">
+                            <label>@item.Mota</label>
+                            <input type="text" class="form-control" readonly value="@item.Soluong" />
+                        </div>
+                    </div>
+                }
+                <div class="col-xl-12">
+                    <h3 class="card-label text-uppercase">
+                        Tiền lương
+                    </h3>
+                </div>
+                @foreach (var item in luong)
+                {
+                    <div class="col-xl-4">
+                        <div class="form-group">
+                            <label>@item.Mota</label>
+                            <input type="text" class="form-control" readonly value="@item.Luong" />
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card card-custom">
+    <div class="card-header flex-wrap border-0 pt-6 pb-0">
+        <div class="card-title">
+            <h3 class="card-label text-uppercase">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="color:#181C32">
+                    PHÂN BỐ LD THEO TRÌNH ĐỘ CMKT<i class="icon-lg la la-eye text-warning" style="margin-left:12px"></i>
+                </a>
+            </h3>
+
+        </div>
+        <div class="card-toolbar">
+        </div>
+    </div>
+    <hr />
+    <div class="card-body" id="accordion">
+        <div class="panel-collapse collapse in" id="collapse2">
+            <div class="row">
+
+                @foreach (var item in trinhdocmkt)
+                {
+                    <div class="col-xl-6">
+                        <div class="form-group">
+                            <label>@item.Mota</label>
+                            <input type="text" class="form-control" readonly value="@item.Count" />
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card card-custom">
+    <div class="card-header flex-wrap border-0 pt-6 pb-0">
+        <div class="card-title">
+            <h3 class="card-label text-uppercase">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="color:#181C32">
+                    PHÂN BỐ LD THEO LĨNH VỰC GDĐT<i class="icon-lg la la-eye text-warning" style="margin-left:12px"></i>
+                </a>
+            </h3>
+
+        </div>
+        <div class="card-toolbar">
+        </div>
+    </div>
+    <hr />
+    <div class="card-body" id="accordion">
+        <div class="panel-collapse collapse in" id="collapse3">
+            <div class="row">
+                @foreach (var item in linhvucdaotao)
+                {
+                    <div class="col-xl-6">
+                        <div class="form-group">
+                            <label>@item.Mota</label>
+                            <input type="text" class="form-control" readonly value="@item.Count" />
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card card-custom">
+    <div class="card-header flex-wrap border-0 pt-6 pb-0">
+        <div class="card-title">
+            <h3 class="card-label text-uppercase">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="color:#181C32">
+                    PHÂN BỐ LD THEO NHÓM NGÀNH NGHỀ CHÍNH<i class="icon-lg la la-eye text-warning" style="margin-left:12px"></i>
+                </a>
+            </h3>
+
+        </div>
+        <div class="card-toolbar">
+        </div>
+    </div>
+    <hr />
+    <div class="card-body" id="accordion">
+        <div class="panel-collapse collapse in" id="collapse4">
+            <div class="row">
+                @if (nghenghiep != null)
+                {
+                    foreach (var item in nghenghiep)
+                    {
+                        <div class="col-xl-6">
+                            <div class="form-group">
+                                <label>@item.Mota</label>
+                                <input type="text" class="form-control" readonly value="@item.Count" />
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>

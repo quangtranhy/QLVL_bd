@@ -1,0 +1,210 @@
+﻿@{
+    var Xa = (IEnumerable<QLViecLam.Models.Admin.Systems.DmHanhChinh>)ViewData["Xa"]!;
+    var Huyen = (IEnumerable<QLViecLam.Models.Admin.Systems.DmHanhChinh>)ViewData["Huyen"]!;
+    var DmLoaiHinhHdkt = (IEnumerable<QLViecLam.Models.Admin.Manages.DanhMuc.DmLoaiHinhHdkt>)ViewData["DmLoaiHinhHdkt"]!;
+    var DmNganhNghe = (IEnumerable<QLViecLam.Models.Admin.Manages.DanhMuc.DmNganhNghe>)ViewData["DmNganhNghe"]!;
+}
+@model QLViecLam.Models.Admin.Manages.ThongTinThiTruongLD.Company
+@section custom_style {
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.css" />
+}
+@section custom_script{
+    <script src="~/Admin/assets/js/pages/crud/forms/widgets/jquery-mask.js"></script>
+    <script src="~/Admin/assets/js/pages/crud/forms/widgets/select2.js"></script>
+
+    <script type="text/javascript" src="~/Admin/assets/datatables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.js"></script>
+    <script src="~/Admin/assets/datatables/scripts/table-managed.js"></script>
+    <script>
+        $(document).ready(function () {
+            TableManaged4.init();
+        });
+    </script>
+}
+<div class="card card-custom">
+    <div class="card-header ribbon ribbon-top ribbon-ver">
+        <div class="card-title">
+            <h3 class="card-label">
+                Thông tin <small>Danh mục nhà tuyển dụng</small>
+            </h3>
+        </div>
+    </div>
+    <!--begin::Form-->
+    <form asp-controller="DmNhaTuyenDung" asp-action="Store" method="post" enctype="multipart/form-data" id="frm_DmNhaTuyenDung_store">
+        <div class="card-body">
+            <div class="mb-3 font-weight-bold font-size-lg">
+                <label style="color: blue; text-decoration-line: underline; font-weight: bold">Thông tin hồ sơ</label>
+            </div>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Tên doanh nghiệp</label>
+                        <input type="text" class="form-control" asp-for="Name" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Mã số doanh nghiệp</label>
+                        <input type="text" class="form-control" asp-for="MaSoDn" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Số đăng kí kinh doanh</label>
+                        <input type="text" class="form-control" asp-for="Dkkd" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Số điện thoại</label>
+                        <input type="text" class="form-control" asp-for="Phone" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Fax</label>
+                        <input type="text" class="form-control" asp-for="Fax" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Website</label>
+                        <input type="text" class="form-control" asp-for="Website" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" class="form-control" asp-for="Email" />
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="form-group">
+                        <label>Địa chỉ</label>
+                        <input type="text" class="form-control" asp-for="Address" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Xã</label>
+                        @* <select class="form-control" asp-for="Xa" asp-items="@Xa"></select> *@
+                        <select class="form-control" asp-for="Xa">
+                            @foreach(var item in Xa)
+                            {
+                                <option value="@item.Name">@item.Name</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Huyện</label>
+                        @* <select class="form-control" asp-for="Xa" asp-items="@Xa"></select> *@
+                        <select class="form-control" asp-for="Huyen">
+                            @foreach (var item in Huyen)
+                            {
+                                <option value="@item.Name">@item.Name</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Khu vực</label>
+                        @* <select class="form-control" asp-for="Xa" asp-items="@Xa"></select> *@
+                        <select class="form-control" asp-for="KhuVuc">
+                            <option value="1">Thành phố</option>
+                            <option value="0">Nông thôn</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Khu công nghiệp</label>
+                        @* <select class="form-control" asp-for="Xa" asp-items="@Xa"></select> *@
+                        <select class="form-control" asp-for="KhuCn">
+                            @foreach(var item in Helpers.KhuCN())
+                            {
+                                <option value="@item.MaKhuCN">@item.TenKhuCN</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Loại hình</label>
+                        @* <select class="form-control" asp-for="Xa" asp-items="@Xa"></select> *@
+                        <select class="form-control" asp-for="LoaiHinh">
+                            @foreach (var item in DmLoaiHinhHdkt)
+                            {
+                                <option value="@item.MaDmLhkt">@item.TenLhkt</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Hình ảnh</label>
+                        <input type="file" class="form-control" asp-for="Image" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Hình ảnh</label>
+                        <select class="form-control" asp-for="NganhNghe">
+                            @foreach (var item in DmNganhNghe)
+                            {
+                                <option value="@item.MaDm">@item.TenDm</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Quy mô</label>
+                        <input type="text" class="form-control" asp-for="QuyMo" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Sld</label>
+                        <input type="text" class="form-control" asp-for="Sld" />
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="card-footer" style="text-align:center">
+            <a asp-controller="DmNhaTuyenDung" asp-action="Index" class="btn btn-danger">
+                <i class="la la-reply"></i>Quay lại
+            </a>&ensp;
+            <button type="reset" class="btn btn-secondary"><i class="la la-refresh"></i>Nhập lại</button>&ensp;
+            <button type="button" class="btn btn-primary mr-2" onclick="ValidateDmNhaTuyenDung()"><i class="la la-check"></i>Thêm mới</button>
+        </div>
+    </form>
+    <!--end::Form-->
+</div>
+<script>
+    function ValidateDmNhaTuyenDung() {
+        if ($('#Socv').val().trim() == '') {
+            toastr.error("Số công văn không được để trống!", "Lỗi!!!")
+        } else {
+            if ($('#Ngayhieuluc').val().trim() == '') {
+                toastr.error("Ngày thực hiện mức giá kê khai không được để trống!", "Lỗi!!!")
+            } else {
+                if ($('#Ngaycvlk').val().trim() == '') {
+                    toastr.error("Ngày nhập số công văn liền kề không được để trống!", "Lỗi!!!")
+                } else {
+                    document.getElementById("frm_DmNhaTuyenDung_store").submit();
+                }
+            }
+        }
+    }
+</script>
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

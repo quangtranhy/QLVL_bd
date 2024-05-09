@@ -1,0 +1,377 @@
+﻿@{
+    var dmdoituonguutiens = (IEnumerable<QLViecLam.Models.Admin.Manages.DanhMuc.DmDoiTuongUuTien>)ViewData["dmdoituonguutiens"]!;
+    var dmtrinhdogdpt = (IEnumerable<QLViecLam.Models.Admin.Manages.DanhMuc.DmTrinhDoGdpt>)ViewData["dmtrinhdogdpt"]!;
+    var dmtrinhdokythuat = (IEnumerable<QLViecLam.Models.Admin.Manages.DanhMuc.DmTrinhDoKyThuat>)ViewData["dmtrinhdokythuat"]!;
+    // var dmtinhtrangthamgiahdkt = (IEnumerable<QLVL_Binh.Models.Systems.dmtinhtrangthamgiahdkt>)ViewData["dmtinhtrangthamgiahdkt"]!;
+    int nam_start = 2022;
+    var nam_stop = DateTime.Now.Year;
+}
+
+<form method="GET" accept-charset="UTF-8" id="frm_lucluonglaodong" target="_blank" asp-controller="TongHopPhanTichDuDoan" asp-action="LucLuongLaoDong">
+    <div id="lucluonglaodong" tabindex="-1" class="modal fade kt_select2_modal" style="display: none;"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header modal-header-primary">
+                    <h4 id="modal-header-primary-label" class="modal-title">
+                        Tổng hợp, phân tích, thống kê số liệu Việc làm
+                    </h4>
+                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="col-lg-12">
+                        <label class="control-label">Kỳ điều tra</label>
+                        <select name="kydieutra" id="" class="form-control select2basic" style="width:100%">
+                            @for (var i = nam_start; i <= nam_stop; i++)
+                            {
+                                        <option>@i</option>
+                            }
+
+                        </select>
+                    </div>
+                    <div class="col-lg-12 mt-3">
+                        <label class="control-label">Chọn tùy biến</label>
+                    </div>
+                    <div class="row mt-1 ml-5" id="1stld">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="gioitinh" name="gender" value="gender">
+                            <label class="form-check-label" for="gioitinh">
+                                Giới
+                                tính
+                            </label>
+                        </div>
+
+                        <div class="form-check form-check-inline ml-5">
+                            <input class="form-check-input" type="checkbox" name="dtut" id="dtut"
+                                   value="dtut">
+                            <label class="form-check-label" for="dtut">
+                                Đối tượng
+                                UT
+                            </label>
+
+                        </div>
+                        <div class="form-check form-check-inline ml-5">
+                            <input class="form-check-input" type="checkbox" name="trinhdogdpt" id="trinhdogdpt"
+                                   value="trinhdogdpt">
+                            <label class="form-check-label" for="trinhdogdpt">Trình độ GDPT</label>
+
+                        </div>
+                        <div class="form-check form-check-inline ml-5">
+                            <input class="form-check-input" type="checkbox" name="trinhdocmkt" id="trinhdocmkt"
+                                   value="trinhdocmkt">
+                            <label class="form-check-label" for="trinhdocmkt">Trình độ CMKT</label>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-10 d-none mt-2" id='gt'>
+                            <label class="control-label">Giới tính</label>
+                            <select name="gioitinh" id="" class="form-control select2basic"
+                                    style="width:100%">
+                                <option value="Nam">Nam</option>
+                                <option value="Nữ">Nữ</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-10 d-none mt-2" id='ut'>
+                            <label class="control-label">Đối tượng UT</label>
+                            <select name="uutien" id="" class="form-control select2basic"
+                                    style="width:100%">
+                                @foreach (var item in dmdoituonguutiens)
+                                {
+                                            <option value="@item.Stt">@item.TenDoiTuong</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-lg-10 d-none mt-2" id='gdpt'>
+                            <label class="control-label">Trình độ DGPT</label>
+                            <select name="trinhdogiaoduc" id="" class="form-control select2basic"
+                                    style="width:100%">
+                                @foreach (var item in dmtrinhdogdpt)
+                                {
+                                            <option value="@item.Stt">@item.TenGdpt</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-lg-10 d-none mt-2" id='cmkt'>
+                            <label class="control-label">Trình độ CMKT</label>
+                            <select name="chuyenmonkythuat" id="" class="form-control select2basic"
+                                    style="width:100%">
+                                @foreach (var item in dmtrinhdokythuat)
+                                {
+                                            <option value="@item.Stt">@item.Tentdkt</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-default">Hủy thao tác</button>
+                    <button type="submit" id="submit" name="submit" value="submit"
+                            class="btn btn-primary">
+                        Đồng
+                        ý
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+<form method="GET" accept-charset="UTF-8" id="frm_thatnghiep" target="_blank" asp-controller="TongHopPhanTichDuDoan" asp-action="ThatNghiep">
+    <div id="thatnghiep" tabindex="-1" class="modal fade kt_select2_modal" style="display: none;"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header modal-header-primary">
+                    <h4 id="modal-header-primary-label" class="modal-title">Tổng hợp, phân tích, thống kê số liệu thất nghiệp</h4>
+                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+                </div>
+                <div class="modal-body">
+                    <input name="tthdkt" id="tthdkt" value="thatnghiep" hidden />
+                    <div class="col-lg-12">
+                        <label class="control-label">Kỳ điều tra</label>
+                        <select name="kydieutra" id="" class="form-control select2basic" style="width:100%">
+
+                            @for (var i = nam_start; i <= nam_stop; i++)
+                            {
+                                        <option>@i</option>
+                            }
+
+                        </select>
+                    </div>
+                    <div class="col-lg-12 mt-3">
+                        <label class="control-label">Chọn tùy biến</label>
+                    </div>
+                    <div class="row mt-1 ml-5" id="1stld">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="gioitinh_Tn" name="gender_Tn" value="gender_Tn">
+                            <label class="form-check-label" for="gioitinh_Tn">
+                                Giới
+                                tính
+                            </label>
+                        </div>
+
+                        <div class="form-check form-check-inline ml-5">
+                            <input class="form-check-input" type="checkbox" name="dtut_Tn" id="dtut_Tn"
+                                   value="dtut_Tn">
+                            <label class="form-check-label" for="dtut_Tn">
+                                Đối tượng
+                                UT
+                            </label>
+
+                        </div>
+                        <div class="form-check form-check-inline ml-5">
+                            <input class="form-check-input" type="checkbox" name="trinhdogdpt_Tn" id="trinhdogdpt_Tn"
+                                   value="trinhdogdpt_Tn">
+                            <label class="form-check-label" for="trinhdogdpt_Tn">Trình độ GDPT</label>
+
+                        </div>
+                        <div class="form-check form-check-inline ml-5">
+                            <input class="form-check-input" type="checkbox" name="trinhdocmkt_Tn" id="trinhdocmkt_Tn"
+                                   value="trinhdocmkt_Tn">
+                            <label class="form-check-label" for="trinhdocmkt_Tn">Trình độ CMKT</label>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-10 d-none mt-2" id='gt_Tn'>
+                            <label class="control-label">Giới tính</label>
+                            <select name="gioitinh_Tn" id="" class="form-control select2basic"
+                                    style="width:100%">
+                                <option value="Nam">Nam</option>
+                                <option value="Nữ">Nữ</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-10 d-none mt-2" id='ut_Tn'>
+                            <label class="control-label">Đối tượng UT</label>
+                            <select name="uutien_Tn" id="" class="form-control select2basic"
+                                    style="width:100%">
+                                @foreach (var item in dmdoituonguutiens)
+                                {
+                                            <option value="@item.Stt">@item.TenDoiTuong</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-lg-10 d-none mt-2" id='gdpt_Tn'>
+                            <label class="control-label">Trình độ DGPT</label>
+                            <select name="trinhdogiaoduc_Tn" id="" class="form-control select2basic"
+                                    style="width:100%">
+                                @foreach (var item in dmtrinhdogdpt)
+                                {
+                                            <option value="@item.Stt">@item.TenGdpt</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-lg-10 d-none mt-2" id='cmkt_Tn'>
+                            <label class="control-label">Trình độ CMKT</label>
+                            <select name="chuyenmonkythuat_Tn" id="" class="form-control select2basic"
+                                    style="width:100%">
+                                @foreach (var item in dmtrinhdokythuat)
+                                {
+                                            <option value="@item.Stt">@item.Tentdkt</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-default">Hủy thao tác</button>
+                    <button type="submit" id="submit" name="submit" value="submit"
+                            class="btn btn-primary">
+                        Đồng
+                        ý
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<form method="GET" accept-charset="UTF-8" id="frm_solieunganhnghe" target="_blank" asp-controller="TongHopPhanTich" asp-action="SoLIeuNganhNghe">
+    <div id="solieunganhnghe" tabindex="-1" class="modal fade kt_select2_modal" style="display: none;"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header modal-header-primary">
+                    <h4 id="modal-header-primary-label" class="modal-title">Số liệu lực lượng lao động</h4>
+                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="col-lg-12">
+                        <label class="control-label">Từ ngày</label>
+                        <input id="tungay" name="tungay" type="date" class="form-control"/>
+                    </div>
+                    <div class="col-lg-12">
+                        <label class="control-label">Đến ngày</label>
+                        <input id="denngay" name="denngay" type="date" class="form-control" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-default">Hủy thao tác</button>
+                    <button type="submit" id="submit" name="submit" value="submit"
+                            class="btn btn-primary">
+                        Đồng
+                        ý
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</form>
+
+<form method="GET" accept-charset="UTF-8" id="frm_solieuvieclam" target="_blank" asp-controller="TongHopPhanTich" asp-action="SoLieuViecLam">
+    <div id="solieuvieclam" tabindex="-1" class="modal fade kt_select2_modal" style="display: none;"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header modal-header-primary">
+                    <h4 id="modal-header-primary-label" class="modal-title">Số liệu việc làm</h4>
+                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="col-lg-12">
+                        <label class="control-label">Từ ngày</label>
+                        <input id="tungay" name="tungay" type="date" class="form-control" />
+                    </div>
+                    <div class="col-lg-12">
+                        <label class="control-label">Đến ngày</label>
+                        <input id="denngay" name="denngay" type="date" class="form-control" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-default">Hủy thao tác</button>
+                    <button type="submit" id="submit" name="submit" value="submit"
+                            class="btn btn-primary">
+                        Đồng
+                        ý
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</form>
+
+ <form method="GET" accept-charset="UTF-8" id="frm_xuhuongtuyendung" target="_blank" asp-controller="TongHopPhanTich" asp-action="XuHuongTuyenDung">
+    <div id="xuhuongtuyendung" tabindex="-1" class="modal fade kt_select2_modal" style="display: none;"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header modal-header-primary">
+                    <h4 id="modal-header-primary-label" class="modal-title">Xu hướng tuyển dụng của thị trường</h4>
+                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="col-lg-12">
+                        <label class="control-label">Từ ngày</label>
+                        <input id="tungay" name="tungay" type="date" class="form-control"/>
+                    </div>
+                    <div class="col-lg-12">
+                        <label class="control-label">Đến ngày</label>
+                        <input id="denngay" name="denngay" type="date" class="form-control" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-default">Hủy thao tác</button>
+                    <button type="submit" id="submit" name="submit" value="submit"
+                            class="btn btn-primary">
+                        Đồng
+                        ý
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</form>
+
+ <form method="GET" accept-charset="UTF-8" id="frm_thitruonglaodong" target="_blank" asp-controller="TongHopPhanTich" asp-action="SoLieuThiTruongLaoDong">
+    <div id="thitruonglaodong" tabindex="-1" class="modal fade kt_select2_modal" style="display: none;"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header modal-header-primary">
+                    <h4 id="modal-header-primary-label" class="modal-title">Số liệu thị trường lao động</h4>
+                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-3">
+                    <div class="form-group fv-plugins-icon-container">
+                    <label style="font-weight:bold; color:blue">Kỳ điều tra</label>
+                    <select class="form-control" id="kydieutra" name="kydieutra">
+                        @for (var i = 2020; i < 2026; i++)
+                        {
+                        <!option value="@i" @((string)ViewData["kydieutra"]! == i!.ToString() ? "selected" : "")>Năm @i</!option>
+                        }
+                    </select>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-default">Hủy thao tác</button>
+                    <button type="submit" id="submit" name="submit" value="submit"
+                            class="btn btn-primary">
+                        Đồng
+                        ý
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  </form>

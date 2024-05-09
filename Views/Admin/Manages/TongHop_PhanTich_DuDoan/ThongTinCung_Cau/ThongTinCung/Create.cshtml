@@ -1,0 +1,334 @@
+﻿@model QLViecLam.Models.Admin.Manages.ThongTinThiTruongLD.NhanKhau
+@section custom_style {
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.css" />
+}
+@section custom_script{
+    <script src="~/Admin/assets/js/pages/crud/forms/widgets/jquery-mask.js"></script>
+    <script src="~/Admin/assets/js/pages/crud/forms/widgets/select2.js"></script>
+
+    <script type="text/javascript" src="~/Admin/assets/datatables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.js"></script>
+    <script src="~/Admin/assets/datatables/scripts/table-managed.js"></script>
+    <script>
+        $(document).ready(function () {
+            TableManaged4.init();
+        });
+    </script>
+}
+<div class="card card-custom">
+    <div class="card-header ribbon ribbon-top ribbon-ver">
+        <div class="card-title">
+            <h3 class="card-label">
+                Thông tin <small>cung lao động</small>
+            </h3>
+        </div>
+    </div>
+    <!--begin::Form-->
+    <form asp-controller="ThongTinCung" asp-action="Store" method="post" enctype="multipart/form-data" id="frm_ThongTinCung_store">
+        <div class="card-body">
+            <div class="mb-3 font-weight-bold font-size-lg">
+                <label style="color: blue; text-decoration-line: underline; font-weight: bold">Thông tin hồ sơ</label>
+            </div>
+            <input type="text" class="form-control" asp-for="MaDonVi" />
+            <input type="text" class="form-control" asp-for="KyDieuTra" />
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Họ tên</label>
+                        <input type="date" class="form-control" asp-for="HoTen" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Giới tính</label>
+                        <select class="form-control" asp-for="GioiTinh">
+                            <option value="Nam">Nam</option>
+                            <option value="Nữ">Nữ</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Ngày sinh</label>
+                        <input type="date" class="form-control" asp-for="NgaySinh" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Căn cước công dân</label>
+                        <input type="date" class="form-control" asp-for="Cccd" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Bảo hiểm xã hội</label>
+                        <input type="date" class="form-control" asp-for="Bhxh" />
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="form-group">
+                        <label>Thường trú</label>
+                        <input type="text" class="form-control" asp-for="ThuongTru" />
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="form-group">
+                        <label>Địa chỉ.</label>
+                        <input type="text" class="form-control" asp-for="DiaChi" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Ưu tiên</label>
+                        <select class="form-control" asp-for="UuTien">
+                            <option value="1">Ưu tiên 1</option>
+                            <option value="2">Ưu tiên 2</option>
+                            <option value="3">Ưu tiên 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Dân tộc</label>
+                        <input type="text" class="form-control" asp-for="DanToc" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Trình độ giáo dục</label>
+                        <select class="form-control" asp-for="TrinhDoGiaoDuc">
+                            <option value="1">Trình độ giáo dục 1</option>
+                            <option value="2">Trình độ giáo dục 2</option>
+                            <option value="3">Trình độ giáo dục 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Chuyên môn kĩ thuật</label>
+                        <select class="form-control" asp-for="ChuyenMonKyThuat">
+                            <option value="1">Chuyên môn kĩ thuật 1</option>
+                            <option value="2">Chuyên môn kĩ thuật 2</option>
+                            <option value="3">Chuyên môn kĩ thuật 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Chuyên nghành.</label>
+                        <input type="text" class="form-control" asp-for="ChuyenNganh" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Tình trạng tham gia hoạt động kinh tế.</label>
+                        <select class="form-control" asp-for="TinhTrangHdkt">
+                            <option value="1">Tình trạng 1</option>
+                            <option value="2">Tình trạng 2</option>
+                            <option value="3">Tình trạng 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Người có việc làm</label>
+                        <select class="form-control" asp-for="NguoiCoVieclam">
+                            <option value="1">Có</option>
+                            <option value="0">Không</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Công việc cụ thể</label>
+                        <input type="text" class="form-control" asp-for="CongViecCuThe" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Tham gia bảo hiểm xã hội</label>
+                        <input type="text" class="form-control" asp-for="ThamGiaBhxh" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Hợp đồng lao động</label>
+                        <input type="text" class="form-control" asp-for="Hdld" />
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="form-group">
+                        <label>Nơi làm việc</label>
+                        <input type="text" class="form-control" asp-for="NoiLamViec" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Loại hình nơi làm việc</label>
+                        <select class="form-control" asp-for="LoaiHinhNoiLamViec">
+                            <option value="1">Loại hình 1</option>
+                            <option value="2">Loại hình 2</option>
+                            <option value="3">Loại hình 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="form-group">
+                        <label>Địa chỉ nơi làm việc</label>
+                        <input type="text" class="form-control" asp-for="DiaChiNoiLamViec" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Thất nghiệp</label>
+                        <select class="form-control" asp-for="ThatNghiep">
+                            <option value="1">Có</option>
+                            <option value="0">Không</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="form-group">
+                        <label>Thời gian thất nghiệp</label>
+                        <input type="text" class="form-control" asp-for="ThoiGianThatNghiep" />
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="form-group">
+                        <label>Không tham gia hoạt động kinh tế</label>
+                        <select class="form-control" asp-for="KhongThamGiaHdkt">
+                            <option value="1">Có tham gia</option>
+                            <option value="0">Không tham gia</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Hộ gia đình</label>
+                        <input type="text" class="form-control" asp-for="Ho" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Mối quan hệ</label>
+                        <input type="text" class="form-control" asp-for="Mqh" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Số lượng trùng</label>
+                        <input type="text" class="form-control" asp-for="SoLuongTrung" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Loại biến động</label>
+                        <select class="form-control" asp-for="LoaiBienDong">
+                            <option value="1">Loại 1</option>
+                            <option value="2">Loại 2</option>
+                            <option value="3">Loại 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Trường biến động</label>
+                        <input type="text" class="form-control" asp-for="RuongBienDong" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Đối tượng tìm việc làm</label>
+                        <input type="text" class="form-control" asp-for="DoiTuongTimViecLam" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Việc làm mong muốn</label>
+                        <input type="text" class="form-control" asp-for="ViecLamMongMuon" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Nghành nghề mong muốn</label>
+                        <input type="text" class="form-control" asp-for="NganhNgheMongMuon" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Nghành nghề muốn học</label>
+                        <input type="text" class="form-control" asp-for="NganhNgheMuonHoc" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Trình độ chuyên môn muốn học</label>
+                        <input type="text" class="form-control" asp-for="TrinhDoChuyenMonMuonHoc" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Số điện thoại</label>
+                        <input type="text" class="form-control" asp-for="Sdt" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Khu vực</label>
+                        <select class="form-control" asp-for="KhuVuc">
+                            <option value="1">Thành thị</option>
+                            <option value="2">Nông thôn</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Thị trường làm việc</label>
+                        <input type="text" class="form-control" asp-for="ThiTruongLamViec" />
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="form-group">
+                        <label>Lý do</label>
+                        <input type="text" class="form-control" asp-for="LyDo" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-footer" style="text-align:center">
+            <a asp-controller="ThongTinCung" asp-action="Index" asp-route-MaDonVi="" class="btn btn-danger">
+                <i class="la la-reply"></i>Quay lại
+            </a>&ensp;
+            <button type="reset" class="btn btn-secondary"><i class="la la-refresh"></i>Nhập lại</button>&ensp;
+            <button type="button" class="btn btn-primary mr-2" onclick="ValidateThongTinCung()"><i class="la la-check"></i>Thêm mới</button>
+        </div>
+    </form>
+    <!--end::Form-->
+</div>
+<script>
+    function ValidateThongTinCung() {
+        if ($('#Socv').val().trim() == '') {
+            toastr.error("Số công văn không được để trống!", "Lỗi!!!")
+        } else {
+            if ($('#Ngayhieuluc').val().trim() == '') {
+                toastr.error("Ngày thực hiện mức giá kê khai không được để trống!", "Lỗi!!!")
+            } else {
+                if ($('#Ngaycvlk').val().trim() == '') {
+                    toastr.error("Ngày nhập số công văn liền kề không được để trống!", "Lỗi!!!")
+                } else {
+                    document.getElementById("frm_ThongTinCung_store").submit();
+                }
+            }
+        }
+    }
+</script>
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

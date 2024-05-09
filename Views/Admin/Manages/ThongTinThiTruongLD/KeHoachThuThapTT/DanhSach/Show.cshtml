@@ -1,0 +1,68 @@
+﻿@{
+    Layout = "_LayoutReports";
+    string TenDonViBaoCao = ViewData["TenDonViBaoCao"]?.ToString() ?? "";
+    string SoKeHoach = ViewData["SoKeHoach"]?.ToString() ?? "";
+    string NgayDuyetKeHoach = ViewData["NgayDuyetKeHoach"]?.ToString() ?? ", ngày .. tháng .. năm ....";
+}
+@model QLViecLam.Models.Admin.Manages.ThongTinThiTruongLD.KeHoachThuThapThongTin
+<table width="96%" border="0" cellspacing="0" cellpadding="8" style="margin:0 auto 20px; text-align:center;">
+    <tr>
+        <td width="50%" style="font-weight: bold; text-align: center; text-transform: uppercase; ">
+            @TenDonViBaoCao
+        </td>
+        <td style="font-weight: bold; text-align: center">
+            <span style="text-transform: uppercase;">Cộng hòa xã hội chủ nghĩa Việt Nam</span><br />
+            <span>Độc lập - Tự do - Hạnh phúc</span><br />
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:center">Số: @SoKeHoach</td>
+        <td style="text-align:center">@NgayDuyetKeHoach</td>
+    </tr>
+    <tr>
+        <td>------</td>
+        <td>----------------</td>
+    </tr>
+</table>
+<p style="font-size:16px; text-transform:uppercase; font-weight:bold; text-align:center">
+    Kế hoạch
+</p>
+<p style="font-size:16px; text-transform:uppercase; text-align:center">
+    @Model.KeHoach
+</p>
+<p style="white-space: pre-line">@Model.CanCu</p>
+<p style="text-align:left; font-weight:bold;">I. Mục đích, yêu cầu, nguyên tắc thu thập</p>
+<p style="text-align:left; font-weight:bold;">1. Mục đích</p>
+<p style="white-space: pre-line">@Model.MucDich</p>
+<p style="text-align:left; font-weight:bold;">2. Yêu cầu</p>
+<p style="white-space: pre-line">@Model.YeuCau</p>
+<p style="text-align:left; font-weight:bold;">3. Nguyên tắc thu thập</p>
+<p style="white-space: pre-line">@Model.NguyenTacThuThap</p>
+<p style="text-align:left; font-weight:bold;">II. Khối lượng thông tin thị trường thu thập</p>
+<p style="white-space: pre-line">@Model.KhoiLuongThongTinThuThap</p>
+<p style="text-align:left; font-weight:bold;">III. Nội dung thu thập, lưu trữ, tổng hợp thị trường lao động</p>
+<p style="white-space: pre-line">@Model.NoiDungThuThap</p>
+<p style="text-align:left; font-weight:bold;">IV. Sản phẩm thu thập, lưu trữ, tổng hợp thông tin thị trường lao động</p>
+<p style="white-space: pre-line">@Model.SanPhamThuThap</p>
+<p style="text-align:left; font-weight:bold;">V. Kế hoạch, nguồn lực thực hiện</p>
+<p style="white-space: pre-line">@Model.KeHoachThucHien</p>
+<p style="text-align:left; font-weight:bold;">VI. Kinh phí thực hiện</p>
+<p style="white-space: pre-line">@Model.KinhPhiThucHien</p>
+<p style="text-align:left; font-weight:bold;">VII. Tổ chức thực hiện</p>
+<p style="white-space: pre-line">@Model.ToChucThucHien</p>
+
+<table cellspacing="0" cellpadding="0" border="0" style="margin: 0px auto; border-collapse: collapse;font-size:14px">
+    <tr style="text-align: center">
+        <td width="50%">       
+        </td>
+        <td width="50%">            
+            <br /><span style="text-transform: uppercase; font-weight: bold">Thủ trưởng đơn vị</span>
+            <br /><span style="font-style: italic">(Ký, ghi rõ họ và tên, đóng dấu)</span>
+        </td>
+    </tr>
+
+    <tr style="text-align: center; height:100px">
+        <td colspan="9" style="font-weight: bold; padding-top: 90px"></td>
+        <td colspan="9" style="font-weight: bold; padding-top: 90px"></td>
+    </tr>
+</table>

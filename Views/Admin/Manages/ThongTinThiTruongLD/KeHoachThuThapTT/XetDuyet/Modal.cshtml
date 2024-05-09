@@ -1,0 +1,241 @@
+﻿<!--Tra Lai Modal-->
+<div class="modal fade" id="TraLai_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="card-label">
+                    @ViewData["Title"]
+                    <span class="d-block text-muted pt-2 font-size-sm">
+                        Trả lại thông tin lập kế hoạch thu thập thông tin
+                    </span>
+                </h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="form-group fv-plugins-icon-container">
+                            <label>Kế hoạch:</label>
+                            <label class="form-control" id="kehoach_tralai" name="kehoach_tralai"></label>
+                            <input hidden id="id_tralai" name="id_tralai" />
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="form-group fv-plugins-icon-container">
+                            <label>Lý do:</label>                           
+                            <input class="form-control" id="lydo_tralai" name="lydo_tralai" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-danger font-weight-bold" onclick="TraLai()">Trả lại kế hoạch</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Ly Do Modal-->
+<div class="modal fade" id="LyDo_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="card-label">
+                    @ViewData["Title"]
+                    <span class="d-block text-muted pt-2 font-size-sm">
+                        Lý do trả lại thông tin lập kế hoạch thu thập thông tin
+                    </span>
+                </h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="form-group fv-plugins-icon-container">
+                            <label>Kế hoạch:</label>
+                            <label class="form-control" id="kehoach_tralai_show" name="kehoach_tralai_show"></label>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="form-group fv-plugins-icon-container">
+                            <label>Lý do:</label>
+                            <label class="form-control" id="lydo_tralai_show" name="lydo_tralai_show"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Xét Duyet Modal-->
+<div class="modal fade" id="XetDuyet_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="card-label">
+                    @ViewData["Title"]
+                    <span class="d-block text-muted pt-2 font-size-sm">
+                        Xét duyệt thông tin lập kế hoạch thu thập thông tin
+                    </span>
+                </h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row" id="frm_xetduyet">                  
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary font-weight-bold" onclick="Duyet()">Duyệt kế hoạch</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Hủy Duyet Modal-->
+<div class="modal fade" id="HuyDuyet_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="card-label">
+                    @ViewData["Title"]
+                    <span class="d-block text-muted pt-2 font-size-sm">
+                        Hủy duyệt thông tin lập kế hoạch thu thập thông tin
+                    </span>
+                </h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="form-group fv-plugins-icon-container">
+                            <label>Kế hoạch:</label>
+                            <label class="form-control" id="kehoach_huyduyet" name="kehoach_huyduyet"></label>
+                            <input hidden id="id_huyduyet" name="id_huyduyet" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-danger font-weight-bold" onclick="HuyDuyet()">Hủy duyệt kế hoạch</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function SetTraLai(id, kehoach) {
+        document.getElementById("kehoach_tralai").innerHTML = kehoach;
+        document.getElementById("id_tralai").value = id;
+        $('#TraLai_Modal').modal("show");
+    }
+
+    function TraLai() {
+        if ($('#lydo_tralai').val() != "") {
+            $.ajax({
+                url: '/XetDuyetKeHoachThuThapThongTin/TraLai',
+                type: 'POST',
+                data: {
+                    Id: $('#id_tralai').val(),
+                    LyDoTraLai: $('#lydo_tralai').val(),
+                },
+                dataType: 'JSON',
+                success: function (data) {
+                    if (data.status == 'success') {
+                        toastr.success("Cập nhật thông tin thành công!", "Thành công!!!");
+                        location.reload();
+                    } else {
+                        toastr.error(data.message, "Lỗi!");
+                    }
+                }
+            })
+        } else {
+            toastr.error("Thông tin không được bỏ trống", "Lỗi!");
+        }
+    }
+
+    function GetLyDo(kehoach, lydo){
+        document.getElementById("kehoach_tralai_show").innerHTML = kehoach;
+        document.getElementById("lydo_tralai_show").innerHTML = lydo;
+        $('#LyDo_Modal').modal("show");
+    }
+
+    function SetDuyet(id) {
+        $.ajax({
+            url: '/XetDuyetKeHoachThuThapThongTin/SetDuyet',
+            type: 'POST',
+            data: {
+                Id: id,                
+            },
+            dataType: 'JSON',
+            success: function (data) {
+                if (data.status == 'success') {
+                    $('#frm_xetduyet').replaceWith(data.message);
+                    $('#XetDuyet_Modal').modal("show");
+                    toastr.success("Cập nhật thông tin thành công!", "Thành công!!!");                  
+                } else {
+                    toastr.error(data.message, "Lỗi!");
+                }
+            }
+        })
+    }
+    function Duyet() {
+        $.ajax({
+            url: '/XetDuyetKeHoachThuThapThongTin/Duyet',
+            type: 'POST',
+            data: {
+                Id: $('#id_duyet').val(),
+                SoKeHoach: $('#sokehoach_duyet').val(),
+                NgayKyKeHoach: $('#ngaykykehoach_duyet').val(),
+            },
+            dataType: 'JSON',
+            success: function (data) {
+                if (data.status == 'success') {                  
+                    toastr.success("Cập nhật thông tin thành công!", "Thành công!!!");
+                    location.reload();
+                } else {
+                    toastr.error(data.message, "Lỗi!");
+                }
+            }
+        })
+    }
+
+    function SetHuyDuyet(id, kehoach) {
+        document.getElementById("kehoach_huyduyet").innerHTML = kehoach;
+        document.getElementById("id_huyduyet").value = id;
+        $('#HuyDuyet_Modal').modal("show");
+    }
+    function HuyDuyet() {
+        $.ajax({
+            url: '/XetDuyetKeHoachThuThapThongTin/HuyDuyet',
+            type: 'POST',
+            data: {
+                Id: $('#id_huyduyet').val(),
+            },
+            dataType: 'JSON',
+            success: function (data) {
+                if (data.status == 'success') {
+                    toastr.success("Cập nhật thông tin thành công!", "Thành công!!!");
+                    location.reload();
+                } else {
+                    toastr.error(data.message, "Lỗi!");
+                }
+            }
+        })
+    }
+
+</script>

@@ -1,0 +1,148 @@
+﻿@{
+    Layout = "_LayoutPrint";
+    var record_id = 1;
+    var DmLoaiHinhHdkt = (IEnumerable<QLViecLam.Models.Admin.Manages.DanhMuc.DmLoaiHinhHdkt>)ViewData["DmLoaiHinhHdkt"]!;
+}
+
+
+<table id="data_header" style="font-size: 12px">
+    <tbody>
+        <tr>
+            <td colspan="3" style="text-align: left">
+                TRUNG TÂM DỊCH VỤ VIỆC LÀM
+            </td>
+            <td style="text-align: right;">
+                Mẫu số 03a/PLI
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <p style="text-align: center;font-weight: bold;font-size: 20px; text-transform: uppercase;">
+                    PHIẾU ĐĂNG KÝ<br>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <p style="text-align: center">
+                    <i>(Dành cho người sử dụng lao động)</i>
+                </p>
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="3">
+            </td>
+            <td>
+                <p style="text-align: left;font-weight:bold">
+                    Mã số............................
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" style="font-size: 12px;width:70%">
+    <!--VABWAFAATABfADIAMAAyADMAMAA2ADIAMwA=-->
+    <tbody>
+        <tr>
+            <td width="100%" colspan="2" valign="top" style="width:100.0%;border:solid windowtext 1.0pt;
+  ">
+                <p style="text-align: left;"><b>1. Thông tin tập thể người lao động</b></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="2" valign="top" style="width:100.0%;border:solid windowtext 1.0pt;
+  ">
+                <p style="text-align: left;">
+                    Tập thể người lao động đến từ *
+                    ………………………………………………………………….
+                </p>
+                <p style="text-align: left;">Số lượng*:……………………………………………………………………………………………..</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="2" valign="top" style="width:100.0%;border:solid windowtext 1.0pt;
+  ">
+                <p style="text-align: left;">
+                    Họ và tên người đại diện*:
+                    ………………………………………………………………………….
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="2" valign="top" style="width:100.0%;border:solid windowtext 1.0pt;
+  ">
+                <p style="text-align: left;">
+                    Địa chỉ liên hệ*:
+                    ………………………………………………………………………………………..
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="11%" rowspan="3" valign="top" style="width:11.14%;border:solid windowtext 1.0pt;
+  ">
+                <p align="center" style="text-align: left;;text-align:center">Thông tin liên lạc</p>
+            </td>
+            <td width="88%" valign="top" style="width:88.86%;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="text-align: left;">Số điện thoại*: ……………………………………………………………………</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="88%" valign="top" style="width:88.86%;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="text-align: left;">Email: ………………………………………………………………………………</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="88%" valign="top" style="width:88.86%;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="text-align: left;">Liên hệ khác (nếu có): …………………………………………………………</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="2" valign="top" style="width:100.0%;border:solid windowtext 1.0pt;
+  ">
+                <p style="text-align: left;">
+                    <b>2. Đăng ký dịch vụ</b> (tích dấu “X” vào các dịch
+                    vụ đăng ký)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="2" valign="top" style="width:100.0%;border:solid windowtext 1.0pt;
+  ">
+                <p style="text-align: left;">[ ] <i>Tư vấn chính sách, pháp luật lao động</i></p>
+                <p style="text-align: left;">[ ] <i>Tư vấn việc làm</i></p>
+                <p style="text-align: left;">[ ] <i>Tư vấn về đào tạo, kỹ năng nghề</i></p>
+                <p style="text-align: left;">[ ] <i>Khác</i> ………………………………………………………………………</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="2" valign="top" style="width:100.0%;border:solid windowtext 1.0pt;
+  ">
+                <p style="text-align: left;">
+                    <b>3. Thời gian đăng ký:</b>
+                    ………………………………………………………………………
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table id="data_footer" width="96%" cellspacing="0" cellpadding="0" style="margin: 20px auto;text-align: left; height:200px">
+    <tbody>
+        <tr>
+            <td width="60%" style="vertical-align: top;">
+            </td>
+            <td style="vertical-align: top;">
+                <i>Ngày......tháng......năm...........</i><br>
+                <b>Người cung cấp thông tin</b><br>
+                <i>(Chữ ký, dấu)</i>
+            </td>
+        </tr>
+    </tbody>
+</table>

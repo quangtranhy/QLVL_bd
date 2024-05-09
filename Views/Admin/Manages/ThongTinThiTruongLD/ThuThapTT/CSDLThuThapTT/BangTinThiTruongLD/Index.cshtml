@@ -1,0 +1,122 @@
+﻿@{
+    var DmTrinhDoKyThuat = (IEnumerable<QLViecLam.ViewModels.Admin.Manages.TongHop_PhanTich_DuDoan.HeThongBaoCaoThongKe.BaoCaoNghiepVu.VM_Count_LucLuongLD>)ViewData["DmTrinhDoKyThuat"]!;
+    var ChuyenNganh = (IEnumerable<QLViecLam.ViewModels.Admin.Manages.TongHop_PhanTich_DuDoan.HeThongBaoCaoThongKe.BaoCaoNghiepVu.VM_Count_LucLuongLD>)ViewData["ChuyenNganh"]!;
+}
+
+@section custom_style{
+    
+}
+
+@section custom_script{
+    
+    <script src="~/Admin/assets/js/pages/features/charts/apexcharts.js"></script>
+    <script>
+        var Mota_dmtrinhdokythuat = [];
+        var Count_dmtrinhdokythuat = [];
+        @foreach (var item in DmTrinhDoKyThuat)
+        {
+            <text>
+                Mota_dmtrinhdokythuat.push('@item.Mota');
+            Count_dmtrinhdokythuat.push(parseInt('@item.Count'));
+            </text>
+        }
+        var Mota_chuyenganh = [];
+        var Count_chuyenganh = [];
+        @foreach (var item in ChuyenNganh)
+        {
+            <text>
+                Mota_chuyenganh.push('@item.Mota');
+            Count_chuyenganh.push(parseInt('@item.Count'));
+            </text>
+        }
+    </script>
+}
+
+<div class="card card-custom">
+    <div class="card-header flex-wrap border-0 pt-6 pb-0">
+        <div class="card-title">
+            <h3 class="card-label">
+                Danh sách<small> Cơ sở dữ liệu các chỉ số của Bản tin thị trường lao động</small><br />
+            </h3>
+        </div>
+        <div class="card-toolbar">
+        </div>
+    </div>
+    <hr />
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card card-custom gutter-b">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3 class="card-label">Tỷ lệ tham gia lực lượng lao động</h3>
+                        </div>
+                    </div>
+                    <div class="card-body" style="position: relative;">
+                        <div id="thamgiahdkt" class="d-flex justify-content-center"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card card-custom gutter-b">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3 class="card-label">Tỷ lệ lực lượng lao động theo trình độ chuyên môn kỹ thuật</h3>
+                        </div>
+                    </div>
+                    <div class="card-body" style="position: relative;">
+                        <div id="dmtrinhdokythuat" class="d-flex justify-content-center"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card card-custom gutter-b">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3 class="card-label">Tỷ lệ lực lượng lao động theo khu vực</h3>
+                        </div>
+                    </div>
+                    <div class="card-body" style="position: relative;">
+                        <div id="khuvuc" class="d-flex justify-content-center"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card card-custom gutter-b">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3 class="card-label">Tỷ lệ lực lượng lao động đang làm việc theo ngành nghề</h3>
+                        </div>
+                    </div>
+                    <div class="card-body" style="position: relative;">
+                        <div id="chuyenganh" class="d-flex justify-content-center"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card card-custom gutter-b">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3 class="card-label">Tỷ lệ diễn biến thất nghiệp</h3>
+                        </div>
+                    </div>
+                    <div class="card-body" style="position: relative;">
+                        <div id="thatnghiep" class="d-flex justify-content-center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<input hidden id="number_dmtrinhdokythuat" value="@ViewData["number_dmtrinhdokythuat"]" />
+<input hidden id="number_chuyenganh" value="@ViewData["number_chuyenganh"]" />
+<!--THAMGIAHDKT-->
+<input hidden id="THAMGIAHDKT" value="@ViewData["thamgiahdkt"]" />
+<input hidden id="NON_THAMGIAHDKT" value="@ViewData["non_thamgiahdkt"]" />
+<!--khu vuc-->
+<input hidden id="NONGTHON" value="@ViewData["nongthon"]" />
+<input hidden id="THANHTHI" value="@ViewData["thanhthi"]" />
+<!--that nghiep-->
+<input hidden id="THATNGHIEP" value="@ViewData["thatnghiep"]" />
+<input hidden id="NON_THATNGHIEP" value="@ViewData["non_thatnghiep"]" />

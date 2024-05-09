@@ -1,0 +1,136 @@
+﻿@{
+    ViewData["Title"] = "Tổng hợp, phân tích, thống kê";
+
+}
+
+
+@section custom_style {
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.css" />
+}
+
+@section custom_script {
+    <script type="text/javascript" src="~/Admin/assets/datatables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.js"></script>
+    <script src="~/Admin/assets/datatables/scripts/table-managed.js"></script>
+    <script>
+            $(document).ready(function () {
+                TableManaged.init();
+            });
+          $('#gioitinh').on('click', function() {
+            var check = $('#gioitinh').is(':checked');
+            if (check) {
+                $('#gt').removeClass('d-none');
+            } else {
+                $('#gt').addClass('d-none');
+            }
+        });
+
+        $('#tthdkt').on('click', function() {
+            var check = $('#tthdkt').is(':checked');
+            if (check) {
+                $('#hdkt').removeClass('d-none');
+            } else {
+                $('#hdkt').addClass('d-none');
+            }
+        });
+        $('#dtut').on('click', function() {
+            var check = $('#dtut').is(':checked');
+            if (check) {
+                $('#ut').removeClass('d-none');
+            } else {
+                $('#ut').addClass('d-none');
+            }
+        });
+        $('#trinhdogdpt').on('click', function() {
+            var check = $('#trinhdogdpt').is(':checked');
+            if (check) {
+                $('#gdpt').removeClass('d-none');
+            } else {
+                $('#gdpt').addClass('d-none');
+            }
+        });
+        $('#trinhdocmkt').on('click', function() {
+            var check = $('#trinhdocmkt').is(':checked');
+            if (check) {
+                $('#cmkt').removeClass('d-none');
+            } else {
+                $('#cmkt').addClass('d-none');
+            }
+        });
+        //that nghiep
+        $('#gioitinh_Tn').on('click', function () {
+            var check = $('#gioitinh_Tn').is(':checked');
+            if (check) {
+                $('#gt_Tn').removeClass('d-none');
+            } else {
+                $('#gt_Tn').addClass('d-none');
+            }
+        });
+        $('#tthdkt_Tn').on('click', function () {
+            var check = $('#tthdkt_Tn').is(':checked');
+            if (check) {
+                $('#hdkt_Tn').removeClass('d-none');
+            } else {
+                $('#hdkt_Tn').addClass('d-none');
+            }
+        });
+        $('#dtut_Tn').on('click', function () {
+            var check = $('#dtut_Tn').is(':checked');
+            if (check) {
+                $('#ut_Tn').removeClass('d-none');
+            } else {
+                $('#ut_Tn').addClass('d-none');
+            }
+        });
+        $('#trinhdogdpt_Tn').on('click', function () {
+            var check = $('#trinhdogdpt_Tn').is(':checked');
+            if (check) {
+                $('#gdpt_Tn').removeClass('d-none');
+            } else {
+                $('#gdpt_Tn').addClass('d-none');
+            }
+        });
+        $('#trinhdocmkt_Tn').on('click', function () {
+            var check = $('#trinhdocmkt_Tn').is(':checked');
+            if (check) {
+                $('#cmkt_Tn').removeClass('d-none');
+            } else {
+                $('#cmkt_Tn').addClass('d-none');
+            }
+        });
+    </script>
+}
+
+<div class="card card-custom">
+    <div class="card-header flex-wrap border-0 pt-6 pb-0">
+        <div class="card-title">
+            <h3 class="card-label">
+                Danh sách<small>Tổng hợp, phân tích, thống kê</small><br />
+            </h3>
+        </div>
+        @*     <div class="card-toolbar">
+        <button type="button" class="btn btn-primary font-weight-bolder" data-target="#Create_Modal" data-toggle="modal">Thêm mới</button>
+        </div> *@
+    </div>
+    <hr />
+    <div class="card-body">
+        <ul>
+            <li><a href="#" data-target="#lucluonglaodong" data-toggle="modal">1. Số liệu lực lượng lao động</a></li>
+            <li><a href="#" data-target="#thatnghiep" data-toggle="modal">2. Số liệu thất nghiệp</a></li>
+            <li><a href="#" data-target="#solieuvieclam" data-toggle="modal">3. Số liệu việc làm</a></li>
+            <li><a asp-controller="TongHopPhanTich" asp-action="MucThuNhap">4. Số liệu mức thu nhập</a></li>
+            <li><a asp-controller="TongHopPhanTich" asp-action="SoLieuNganhNghe">5. Số liệu biến động việc làm theo ngành nghề, nhóm ngành nghề</a></li>
+            <li><a asp-controller="TongHopPhanTich" asp-action="BaoHiemXaHoi">6. Số liệu chế độ bảo hiểm xã hội</a></li>
+            <li><a asp-controller="TongHopPhanTich" asp-action="BaoHiemThatNghiep">7. Số liệu bảo hiểm thất nghiệp</a></li>
+            <li><a  href="#" data-target="#thitruonglaodong" data-toggle="modal">8. Số liệu hoạt động giao dịch thị trường lao động</a></li>
+            <li><a  href="#" data-target="#xuhuongtuyendung" data-toggle="modal">9. Số liệu xu hướng tuyển dụng, tìm việc trên thị trường</a></li>
+        </ul>
+    </div>
+    
+</div>
+
+
+@await Html.PartialAsync("~/Views/Admin/Manages/TongHop_PhanTich_DuDoan/TongHopPhanTichDuDoan/Modal.cshtml")
+
+

@@ -1,0 +1,148 @@
+﻿@{
+    int record_id = 1;
+    var Xa = (IEnumerable<QLViecLam.Models.Admin.Systems.DmHanhChinh>)ViewData["Xa"]!;
+    var Huyen = (IEnumerable<QLViecLam.Models.Admin.Systems.DmHanhChinh>)ViewData["Huyen"]!;
+    var tinhtrangxacthuc = Convert.ToBoolean(ViewData["TinhTrangXacThuc"]);
+}
+@model IEnumerable<QLViecLam.Models.Admin.Manages.ThongTinThiTruongLD.NhanKhau>
+
+@section custom_style {
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.css" />
+}
+
+@section custom_script {
+    <script type="text/javascript" src="~/Admin/assets/datatables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.js"></script>
+    <script src="~/Admin/assets/datatables/scripts/table-managed.js"></script>
+    <script>
+        $(document).ready(function () {
+            TableManaged.init();
+        });
+
+        $(function () {
+            $('#huyen,#xa,#kydieutra,#tinhtrang,#TinhTrangXacThuc').change(function () {
+                var current_path_url = '/TruyVanThongTinCungLaoDong/VanTinKiemTraXacThucCungLD?';
+                var tinhtrang = '&tinhtrang=' + $('#tinhtrang').val();
+                var tinhtrangxacthuc = '&TinhTrangXacThuc=' + $('#TinhTrangXacThuc').val();
+                var kydieutra = '&kydieutra=' + $('#kydieutra').val();
+                var huyen = '&huyen=' + $('#huyen').val();
+                var xa = '&xa=' + $('#xa').val();
+                var url = current_path_url + tinhtrang + huyen + xa + tinhtrangxacthuc;
+                window.location.href = url;
+            })
+        });
+        /*
+        function updateInput() {
+        var selectedOption = document.getElementById("Madiaban");
+        var selectedLabel = selectedOption.options[selectedOption.selectedIndex].getAttribute("data-label");
+        document.getElementById("test").value = selectedLabel;
+        }
+        */
+    </script>
+}
+
+<div class="card card-custom">
+    <div class="card-header flex-wrap border-0 pt-6 pb-0">
+        <div class="card-title">
+            <h3 class="card-label">
+                Danh sách<small>Cơ sở dữ liệu thông tin thông tin người tìm việc</small><br />
+            </h3>
+        </div>
+        <div class="card-toolbar">
+        </div>
+    </div>
+    <hr />
+    <div class="card-body">
+        <div class="row">
+            <div class="col-xl-3">
+                <div class="form-group fv-plugins-icon-container">
+                    <label style="font-weight:bold; color:blue">Huyện</label>
+                    @* <select class="form-control" id="Madiaban" name="Madiaban" onchange="updateInput()"> *@
+                    <select class="form-control" id="huyen" name="huyen">
+                        @foreach (var huyen in Huyen)
+                        {
+                            <!option value="@huyen.MaQuocGia" @((string)ViewData["mahuyen"]! == huyen.MaQuocGia ? "selected" : "")>@huyen.Name</!option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="form-group fv-plugins-icon-container">
+                    <label style="font-weight:bold; color:blue">Xã</label>
+                    <select class="form-control" id="xa" name="xa">
+                        @foreach (var xa in Xa)
+                        {
+                            <!option value="@xa.Id" @((string)ViewData["maxa"]! == xa.Id!.ToString() ? "selected" : "")>@xa.Name</!option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="form-group fv-plugins-icon-container">
+                    <label style="font-weight:bold; color:blue">Kỳ điều tra</label>
+                    <select class="form-control" id="kydieutra" name="kydieutra">
+                        @for (var i = 2020; i < 2026; i++)
+                        {
+                            <!option value="@i" @((string)ViewData["kydieutra"]! == i!.ToString() ? "selected" : "")>Năm @i</!option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="form-group fv-plugins-icon-container">
+                    <label style="font-weight:bold; color:blue">Tình trạng tham gia HĐKT</label>
+                    <select class="form-control" id="tinhtrang" name="tinhtrang">
+                        <!option value="">Tất cả</!option>
+                        <!option value="1" @((string)ViewData["tinhtrang"]! == "1" ? "selected" : "")>Có việc làm</!option>
+                        <!option value="2"  @((string)ViewData["tinhtrang"]! == "2" ? "selected" : "")>Thất nghiệp</!option>
+                        <!option value="3"  @((string)ViewData["tinhtrang"]! == "3" ? "selected" : "")>Không tham gia HĐKT</!option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="form-group fv-plugins-icon-container">
+                    <label style="font-weight:bold; color:blue">Tình trạng xác thực</label>
+                    <select class="form-control" asp-for="@tinhtrangxacthuc" id="TinhTrangXacThuc">
+                        <option value="false"> Chưa xác thực </option>
+                        <option value="true"> Đã xác thực </option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <table class="table table-striped table-bordered table-hover" id="sample_3">
+            <thead>
+                <tr style="text-align:center">
+                    <th>Stt</th>
+                    <th>Họ tên</th>
+                    <th>CMND</th>
+                    <th>Ngày sinh</th>
+                    <th>Thường trú</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@(record_id++)</td>
+                            <td>@item.HoTen</td>
+                            <td>@item.Cccd</td>
+                            <td>@item.NgaySinh</td>
+                            <td>@item.ThuongTru</td>
+                            <td>
+                                <a class="btn font-weight-bolder" asp-controller="TruyVanThongTinCungLaoDong" asp-action="Print" asp-route-Id="@item.Id" title="In thông tin và xác thực" target="_blank">
+                                    <i class="icon-lg la flaticon2-print text-primary"></i>
+                                </a>
+                            </td>
+
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

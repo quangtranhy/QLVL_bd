@@ -1,0 +1,1619 @@
+﻿@{
+    Layout = "_LayoutPrint";
+    var record_id = 1;
+    var DmLoaiHinhHdkt = (IEnumerable<QLViecLam.Models.Admin.Manages.DanhMuc.DmLoaiHinhHdkt>)ViewData["DmLoaiHinhHdkt"]!;
+}
+
+
+<table id="data_header" style="font-size: 12px;width:72%">
+    <tbody>
+        <tr>
+            <td colspan="4">
+                <p style="text-align: center;font-weight: bold;font-size: 20px; text-transform: uppercase;">
+                    BỘ LAO ĐỘNG - THƯƠNG BINH VÀ XÃ HỘI
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: left">
+                Tỉnh/thành phố:........................................<br>
+                Quận/huyện/thị xã:.....................................<br>
+                Xã/phường/thị trấn:....................................<br>
+                Thôn (bản, ấp, tổ dân phố và tương đương):.............<br>
+                Quyển số:..............................................
+            </td>
+            <td style="text-align: right;">
+                <br />
+                <br />
+                <br />
+                <br />
+                (Phường/Thị trấn=1; Xã=2)
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <p style="text-align: center;font-weight: bold;font-size: 20px; text-transform: uppercase;">
+                    SỔ GHI CHÉP THÔNG TIN THỊ TRƯỜNG LAO ĐỘNG
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <p style="text-align: center">
+                    (Ban hành theo Thông tư số 27/2015/TT-LĐTBXH ngày 24/7/2015 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội hướng dẫn thu thập, 
+                    lưu trữ, tổng hợp thông tin thị trường lao động)
+                </p>
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="4">
+                <p style="text-align: left">
+                    Thời gian ghi chép: Bắt đầu từ ngày……/……/……….đến ngày……/……/……..
+                </p>
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="4">
+                <p style="text-align: left">
+                    Số doanh nghiệp/đơn vị ghi chép: Bắt đầu từ địa chỉ:…………………………đến ……………………..
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+<br />
+<br />
+<table id="data_body" style="font-size: 12px;width:72%">
+    <tr>
+        <p style="text-align: center;font-weight: bold;font-size: 20px; text-transform: uppercase;">
+            THÔNG TIN NGƯỜI GHI CHÉP<br>
+        </p>
+    </tr>
+</table>
+
+<table id="data_body" cellspacing="0" cellpadding="0" border="1" style="font-size: 12px;width:72%">
+    <tbody>
+        <tr>
+            <td>Thời điểm ghi chép (từ ngày     đến ngày)  </td>
+            <td>Họ và tên người ghi sổ </td>
+            <td>Chức vụ, Đơn vị công tác</td>
+            <td>Địa chỉ liên hệ</td>
+            <td>Điện thoại liên hệ</td>
+        </tr>
+        <tr height="22">
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>Đ</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<table id="data_body" style="font-size: 12px;width:72%">
+    <tbody>
+        <tr>
+            <td colspan="3" style="text-align: left"><b>Người sử dụng lao động...................</td>
+            <td style="text-align: left;"><b>Số thứ tự.................</b></td>
+        </tr>
+        <tr>
+            <td colspan="3"  style="text-align: left">Địa chỉ...................</td>
+            <td style="text-align: left">(Phường/Thị trấn =1; Xã=2)                 (Nằm trong KCN/KCX)     </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: left">Số điện thoại liên hệ...................</td>
+            <td style="text-align: left">Mã số</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<table id="data_body" cellspacing="0" cellpadding="0" border="1" style="font-size: 12px;width:72%">
+    <colgroup>
+        <col class="xl7410152" width="35" style="mso-width-source:userset;mso-width-alt:
+ 1120;width:26pt">
+        <col class="xl6310152" width="619" style="mso-width-source:userset;mso-width-alt:
+ 19808;width:464pt">
+        <col class="xl6310152" width="105" span="5" style="mso-width-source:userset;
+ mso-width-alt:3360;width:79pt">
+    </colgroup>
+    <tbody>
+        <tr height="27" style="mso-height-source:userset;height:20.25pt">
+            <td rowspan="2" height="57" class="xl6410152" width="35" style="height:42.75pt;
+  width:26pt">
+                TT
+            </td>
+            <td rowspan="2" class="xl6410152" width="619" style="width:464pt">Chỉ tiêu</td>
+            <td colspan="5" class="xl6410152" width="525" style="border-left:none;width:395pt">
+                Thời
+                điểm ghi chép
+            </td>
+        </tr>
+        <tr height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7110152" width="105" style="height:22.5pt;border-top:none;
+  border-left:none;width:79pt">
+                Ngày…
+            </td>
+            <td class="xl7110152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                Ngày…
+            </td>
+            <td class="xl7110152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                Ngày…
+            </td>
+            <td class="xl7110152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                Ngày…
+            </td>
+            <td class="xl7110152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                Ngày…
+            </td>
+        </tr>
+        <tr height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl6410152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                1
+            </td>
+            <td class="xl7510152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Tình trạng hoạt động<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;</span>
+            </td>
+            <td class="xl7110152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl7110152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl7110152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl7110152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl7110152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl6410152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                2
+            </td>
+            <td class="xl6510152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Loại hình<span style="mso-spacerun:yes">&nbsp;&nbsp;</span>
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl6410152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                3
+            </td>
+            <td class="xl6510152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Ngành, nghề kinh doanh chính
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6810152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl6410152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                4
+            </td>
+            <td colspan="6" class="xl7910152" width="1144" style="border-right:.5pt solid black;
+  border-left:none;width:859pt">
+                Lao động đang làm việc
+            </td>
+        </tr>
+        <tr class="xl6810152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7110152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                4.1
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Tổng số lao động đang làm việc
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7110152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                4.2
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Lao động ngoại tỉnh
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7110152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                4.3
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Lao động trực tiếp
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7110152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                4.4
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Lao động nữ
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl7010152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7110152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                4.5
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Số lao động đã ký hợp
+                đồng lao động
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl7010152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7110152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                - Trong đó lao động là nữ
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl7010152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7110152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                4.6
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Số lao động là người nước
+                ngoài
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                <span style="mso-spacerun:yes">&nbsp;</span>
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7110152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                - Trong đó lao động là nữ
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7110152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                4.7
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Lao động đã tốt nghiệp trung
+                học phổ thông
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl6410152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                5
+            </td>
+            <td colspan="6" class="xl7910152" width="1144" style="border-right:.5pt solid black;
+  border-left:none;width:859pt">
+                Lao động đang làm việc
+                chia theo trình độ chuyên môn kỹ thuật
+            </td>
+        </tr>
+        <tr class="xl6810152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7710152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                5.1
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Không có trình độ chuyên môn kỹ thuật
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7710152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                5.2
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Công nhân kỹ thuật không có bằng/chứng
+                chỉ<span style="mso-spacerun:yes">&nbsp;</span>
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7710152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                5.3
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Đào tạo thường xuyên
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7710152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                5.4
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Sơ cấp nghề
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7710152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                5.5
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Trung cấp
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7710152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                5.6
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Cao đẳng
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl7710152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                5.7
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Đại học trở lên
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6810152" height="30" style="mso-height-source:userset;height:22.5pt">
+            <td height="30" class="xl6410152" width="35" style="height:22.5pt;border-top:none;
+  width:26pt">
+                6
+            </td>
+            <td colspan="6" class="xl7910152" width="1144" style="border-right:.5pt solid black;
+  border-left:none;width:859pt">
+                Lao động đang làm việc
+                chia theo nhóm nghề
+            </td>
+        </tr>
+        <tr class="xl6710152" height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7710152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                6.1
+            </td>
+            <td class="xl7310152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Nhà lãnh đạo trong các ngành, các cấp, các
+                đơn vị
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;width:79pt">&nbsp;</td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7710152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                6.2
+            </td>
+            <td class="xl7310152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Nhà chuyên môn bậc cao/trung
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;width:79pt">&nbsp;</td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7710152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                6.3
+            </td>
+            <td class="xl7310152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Nhân viên trợ lý văn phòng
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;width:79pt">&nbsp;</td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7710152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                6.4
+            </td>
+            <td class="xl7310152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Nhân viên dịch vụ và bán hàng<span style="mso-spacerun:yes">&nbsp;</span>
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;width:79pt">&nbsp;</td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7710152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                6.5
+            </td>
+            <td class="xl7310152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Lao động có kỹ năng trong<span style="mso-spacerun:yes">&nbsp; </span>lĩnh vực<span style="mso-spacerun:yes">&nbsp; </span>nông nghiệp (nông, lâm và thủy
+                sản)
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;width:79pt">&nbsp;</td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7710152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                6.6
+            </td>
+            <td class="xl7310152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Lao động thủ công và các nghề
+                nghiệp có liên quan
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;width:79pt">&nbsp;</td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7710152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                6.7
+            </td>
+            <td class="xl7310152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Thợ lắp ráp và vận hành máy móc, thiết
+                bị
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;width:79pt">&nbsp;</td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr class="xl6710152" height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7710152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                6.8
+            </td>
+            <td class="xl7310152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Lao động giản đơn
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;width:79pt">&nbsp;</td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl6410152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                7
+            </td>
+            <td colspan="6" class="xl7910152" width="1144" style="border-right:.5pt solid black;
+  border-left:none;width:859pt">
+                Lao động đang làm việc
+                chia theo lĩnh vực giáo dục - đào tạo
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7710152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                7.1
+            </td>
+            <td class="xl7310152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Kinh tế - xã hội
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;width:79pt">&nbsp;</td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7710152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                7.2
+            </td>
+            <td class="xl7810152" style="border-top:none;border-left:none">
+                Khoa học
+                tự nhiên
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7710152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                7.3
+            </td>
+            <td class="xl7810152" style="border-top:none;border-left:none">
+                Kỹ
+                thuật và công nghệ
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7710152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                7.4
+            </td>
+            <td class="xl7810152" style="border-top:none;border-left:none">
+                Nông
+                nghiệp, lâm nghiệp, thủy sản và thú y
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7710152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                7.5
+            </td>
+            <td class="xl7810152" style="border-top:none;border-left:none">
+                Y tế, môi
+                trường và các dịch vụ khác
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7710152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                7.6
+            </td>
+            <td class="xl7810152" style="border-top:none;border-left:none">
+                Chưa qua
+                đào tạo
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl6410152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                8
+            </td>
+            <td colspan="6" class="xl7910152" width="1144" style="border-right:.5pt solid black;
+  border-left:none;width:859pt">
+                Tiền lương<span style="mso-spacerun:yes">&nbsp;</span>
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7110152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                8.1
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Tiền lương bình quân 6 tháng đầu
+                năm (1000đ/người/tháng)
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7110152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                8.2
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Tiền lương thấp nhất trong 6 tháng
+                đầu năm (1000đ/người/tháng)
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7110152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                8.3
+            </td>
+            <td class="xl6610152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Tiền lương cao nhất trong 6 tháng
+                đầu năm (1000đ/người/tháng)
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl6410152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                9
+            </td>
+            <td colspan="6" class="xl7910152" width="1144" style="border-right:.5pt solid black;
+  border-left:none;width:859pt">
+                Nhu cầu tuyển dụng lao
+                động
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7110152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                9.1
+            </td>
+            <td class="xl7310152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Tổng số lao động cần tuyển
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;width:79pt">&nbsp;</td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7110152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                9.2
+            </td>
+            <td class="xl7310152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Số lao động cần tuyển chia theo
+                trình độ chuyên môn kỹ thuật
+            </td>
+            <td class="xl6510152" width="105" style="border-top:none;width:79pt">&nbsp;</td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7610152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                a
+            </td>
+            <td class="xl6910152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Không có trình độ chuyên môn kỹ thuật
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7610152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                b
+            </td>
+            <td class="xl6910152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Công nhân kỹ thuật không có bằng/chứng
+                chỉ<span style="mso-spacerun:yes">&nbsp;</span>
+            </td>
+            <td class="xl6910152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7610152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                c
+            </td>
+            <td class="xl6910152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Đào tạo thường xuyên
+            </td>
+            <td class="xl7210152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7610152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                đ
+            </td>
+            <td class="xl6910152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Sơ cấp nghề
+            </td>
+            <td class="xl7210152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7610152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                e
+            </td>
+            <td class="xl6910152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Trung cấp
+            </td>
+            <td class="xl7210152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7610152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                g
+            </td>
+            <td class="xl6910152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Cao đẳng
+            </td>
+            <td class="xl7210152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="25" style="mso-height-source:userset;height:18.75pt">
+            <td height="25" class="xl7610152" width="35" style="height:18.75pt;border-top:none;
+  width:26pt">
+                h
+            </td>
+            <td class="xl6910152" width="619" style="border-top:none;border-left:none;
+  width:464pt">
+                Đại học trở lên
+            </td>
+            <td class="xl7210152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+            <td class="xl6610152" width="105" style="border-top:none;border-left:none;
+  width:79pt">
+                &nbsp;
+            </td>
+        </tr>
+        <tr height="22" style="height:16.5pt">
+            <td height="22" class="xl7410152" style="height:16.5pt"></td>
+            <td class="xl6310152"></td>
+            <td class="xl6310152"></td>
+            <td class="xl6310152"></td>
+            <td class="xl6310152"></td>
+            <td class="xl6310152"></td>
+            <td class="xl6310152"></td>
+        </tr>
+        <tr height="22" style="height:16.5pt">
+            <td height="22" class="xl7410152" style="height:16.5pt"></td>
+            <td class="xl6310152"></td>
+            <td class="xl6310152"></td>
+            <td class="xl6310152"></td>
+            <td class="xl6310152"></td>
+            <td class="xl6310152"></td>
+            <td class="xl6310152"></td>
+        </tr>
+        <!--[if supportMisalignedColumns]-->
+        <tr height="0" style="display:none">
+            <td width="35" style="width:26pt"></td>
+            <td width="619" style="width:464pt"></td>
+            <td width="105" style="width:79pt"></td>
+            <td width="105" style="width:79pt"></td>
+            <td width="105" style="width:79pt"></td>
+            <td width="105" style="width:79pt"></td>
+            <td width="105" style="width:79pt"></td>
+        </tr>
+        <!--[endif]-->
+    </tbody>
+</table>
+<br />
+<table id="data_body" style="font-size: 12px;width:72%">
+    <tr>
+        <p style="text-align: center;font-weight: bold;font-size: 20px; text-transform: uppercase;">
+            BẢNG KÊ CÁC DOANH NGHIỆP, CƠ QUAN, TỔ CHỨC, HỢP TÁC XÃ, HỘ GIA ĐÌNH, CÁ NHÂN CÓ THUÊ MƯỚN, CÓ SỬ DỤNG LAO ĐỘNG<br>
+        </p>
+    </tr>
+</table>
+
+<table id="data_body" cellspacing="0" cellpadding="0" border="1" style="font-size: 12px;width:72%">
+    <tbody>
+        <tr>
+            <td>Mã số DN, TC, CN</td>
+            <td>Tên doanh nghiệp, cơ quan, tổ chức, hợp tác xã, hộ gia đình, cá nhân có thuê mướn, có sử dụng lao động</td>
+            <td>Địa chỉ, số điện thoại liên hệ</td>
+            <td>Ghi chó</td>
+        </tr>
+        <tr height="22">
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<table id="data_footer" width="96%" cellspacing="0" cellpadding="0" style="margin: 20px auto;text-align: center; height:200px">
+    <tbody>
+        <tr>
+            <td width="40%" style="text-align: left; vertical-align: top;">
+            </td>
+            <td style="vertical-align: top;">
+                <i>Ngày......tháng......năm...........</i><br>
+                <b>Người cung cấp thông tin</b><br>
+                <i>(Chữ ký, dấu)</i>
+            </td>
+        </tr>
+    </tbody>
+</table>

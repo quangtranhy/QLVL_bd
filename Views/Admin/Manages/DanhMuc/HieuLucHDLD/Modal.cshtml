@@ -1,0 +1,154 @@
+﻿@{
+    var stt = ViewData["Stt"];
+    stt = stt != null ? (int)stt + 1 : 1;
+}
+<!--Create Modal-->
+<form asp-controller="HieuLucHDLD" asp-action="Store" method="post" enctype="multipart/form-data" id="HieuLucHDLD_store">
+    <div class="modal fade" id="Create_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="card-label text-dark">
+                        Thông tin danh mục
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="ki ki-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row text-left">
+                        <div class="col-xl-12">
+                            <div class="form-group fv-plugins-icon-container">
+                                <label><b>Số thứ tự</b></label>
+                                <input type="number" id="stt_create" name="stt_create" value="@stt" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="form-group fv-plugins-icon-container">
+                                <label><b>Tên loại, hợp đồng lao động</b></label>
+                                <input type="text" id="tenlhl_create" name="tenlhl_create" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="form-group fv-plugins-icon-container">
+                                <label><b>Mô tả</b></label>
+                                <textarea type="text" id="mota_create" name="mota_create" cols="12" rows="3" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="form-group fv-plugins-icon-container">
+                                <label><b>Trạng thái</b></label>
+                                <select type="text" id="trangthai_create" name="trangthai_create" class="form-control">
+                                    <option value="kh">Kích hoạt</option>
+                                    <option value="kkh">Không kích hoạt</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-default font-weight-bold" data-dismiss="modal">Hủy thao tác</button>
+                    <button type="button" class="btn btn-primary font-weight-bold" onclick="CreateValidate()">Đồng ý</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!--Edit Modal-->
+<form asp-controller="HieuLucHDLD" asp-action="Update" method="post" enctype="multipart/form-data" id="HieuLucHDLD_edit">
+    <div class="modal fade" id="Edit_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="card-label text-dark">
+                        Thông tin danh mục
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="ki ki-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body" id="edit_thongtin">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light-default font-weight-bold" data-dismiss="modal">Hủy thao tác</button>
+                    <button type="button" class="btn btn-primary font-weight-bold" onclick="EditValidate()">Đồng ý</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!--Delete Modal-->
+<form asp-controller="HieuLucHDLD" asp-action="Delete" method="post" enctype="multipart/form-data">
+    <div class="modal fade" id="Delete_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="card-label text-dark">
+                        Đồng ý xóa???
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="ki ki-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row text-left">
+                        <input hidden id="id_delete" name="id_delete" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light-default font-weight-bold" data-dismiss="modal">Hủy thao tác</button>
+                    <button type="submit" class="btn btn-primary font-weight-bold">Đồng ý</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script>
+    function CreateValidate() {
+        if ($('#tenlhl_create').val() == '') {
+            toastr.error("Tên loại, hợp đồng lao động không được để trống!", "Lỗi!!!")
+        }
+        else {
+            if ($('#mota_create').val() == '') {
+                toastr.error("Mô tả không được để trống!", "Lỗi!!!")
+            } else {
+                document.getElementById("HieuLucHDLD_store").submit();
+            }
+        }
+    }
+    function EditValidate() {
+        if ($('#tenlhl_edit').val() == '') {
+            toastr.error("Tên loại, hợp đồng lao động không được để trống!", "Lỗi!!!")
+        }
+        else {
+            if ($('#mota_edit').val() == '') {
+                toastr.error("Mô tả không được để trống!", "Lỗi!!!")
+            } else {
+                document.getElementById("HieuLucHDLD_edit").submit();
+            }
+        }
+    }
+
+    function SetEdit(id_edit) {
+        $.ajax({
+            url: '/HieuLucHDLD/Edit',
+            type: 'POST',
+            data: {
+                id: id_edit
+            },
+            dataType: 'JSON',
+            success: function (data) {
+                if (data.status == 'success') {
+                    $('#edit_thongtin').replaceWith(data.message);
+                }
+            }
+        })
+    }
+
+    function SetDelete(id) {
+        document.getElementById("id_delete").value = id;
+    }
+</script>

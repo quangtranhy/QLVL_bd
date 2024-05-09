@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controllers",
+    "\\Controllers\\Admin",
+    "\\Controllers\\Admin\\Manages",
+    "\\Controllers\\Admin\\Manages\\TongHop_PhanTich_DuDoan",
+    "\\Controllers\\Admin\\Manages\\TongHop_PhanTich_DuDoan\\TongHopPhanTichDuDoan"
+  ],
+  "SelectedNode": "\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

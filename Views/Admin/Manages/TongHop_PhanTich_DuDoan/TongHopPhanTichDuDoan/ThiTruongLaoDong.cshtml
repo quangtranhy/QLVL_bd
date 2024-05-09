@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Tổng hợp, phân tích, thống kê";
+
+    // var model = (IEnumerable<QLVL_Binh.Models.Systems.nhankhau>)ViewData["model"]!;
+    int record_id = 1;
+}
+
+   @model IEnumerable<QLViecLam.ViewModels.Admin.Manages.TongHop_PhanTich_DuDoan.TongHopPhanTichDuDoan.VM_ThiTruongLaoDong>
+
+@section custom_style {
+                <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.css" />
+                <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.css" />
+}
+
+@section custom_script {
+                <script type="text/javascript" src="~/Admin/assets/datatables/js/jquery.dataTables.min.js"></script>
+                <script type="text/javascript" src="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.js"></script>
+                <script src="~/Admin/assets/datatables/scripts/table-managed.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        TableManaged.init();
+                    });
+
+                </script>
+}
+
+<div class="card card-custom">
+    <div class="card-header flex-wrap border-0 pt-6 pb-0">
+        <div class="card-title">
+            <h3 class="card-label">
+                Danh sách<small>Số liệu thất nghiệp</small><br />
+            </h3>
+        </div>
+
+    </div>
+    <hr />
+    <div class="card-body">
+        <table class="table table-bordered table-hover" cellspacing="0" cellpadding="0" border="1" style="margin: 20px auto; border-collapse: collapse;font-size: 12px">
+            <tr>
+                <th>Stt</th>
+                <th>TRình độ kỹ thuật</th>
+                <th>Cung lao động</th>
+                 <th>Cầu lao động</th>
+            </tr>
+            @if (Model != null)
+            {
+                @foreach (var hc in Model)
+                {
+                    <tr>
+                        <td>@(record_id++)</td>
+                        <td>@hc.Name</td>
+                        <td>@hc.Cung</td>
+                        <td>@hc.Cau</td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+
+</div>
+

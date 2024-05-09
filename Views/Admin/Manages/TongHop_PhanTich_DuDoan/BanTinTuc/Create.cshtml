@@ -1,0 +1,114 @@
+﻿@{
+    ViewData["Title"] = "Thêm mới bản Tin";
+
+}
+
+
+@section custom_style {
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.css" />
+}
+
+@section custom_script {
+    <script type="text/javascript" src="~/Admin/assets/datatables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.js"></script>
+    <script src="~/Admin/assets/datatables/scripts/table-managed.js"></script>
+    <script>
+        $(document).ready(function () {
+            TableManaged.init();
+        });
+
+
+    </script>
+}
+
+<div class="card card-custom">
+    <div class="card-header flex-wrap border-0 pt-6 pb-0">
+        <div class="card-title">
+            <h3 class="card-label">
+                Thêm mới<small>Bản tin</small><br />
+            </h3>
+        </div>
+        <div class="card-toolbar">
+          @*   <button type="button" class="btn btn-primary font-weight-bolder"  asp-controller="BanTin" asp-action="Create" >Thêm mới</button> *@
+        </div>
+    </div>
+    <hr />
+    <div class="card-body">
+           <form method="POST" enctype='multipart/form-data' asp-controller="BanTin" asp-action="Store">
+                <div class="tab-content">
+                    <div class="tab-pane fade active show" id="bantin" role="tabpanel" aria-labelledby="bantin">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Tiêu đề<span class="text-danger">*</span></label>
+                                        <input type="text" name="TieuDe"class="form-control" required>
+                                    </div>
+                                </div>
+                                 <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Trạng thái</label>
+                                        <select id="TrangThai" name="TrangThai"  class="form-control" >
+                                                <option value="1">Hiển thị</option>
+                                                <option value="2">Ẩn</option>
+                                        </select>
+                                      
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Thời điểm<span class="text-danger">*</span></label>
+                                        <input type="date" name="ThoiDiem" class="form-control" required>
+                                    </div>
+                                </div>
+                                 <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Mô tả</label>
+                                        <textarea type="text" name="MoTa"class="form-control" rows="3"></textarea>
+                                    </div>
+                                </div>
+
+
+                                 <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label> Nội Dung<span class="text-danger"></span></label>
+                                        <textarea  name="NoiDung" id="NoiDung" class="form-control" rows="20"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                  <div class="card-footer">
+                            <div class="row text-center">
+                      
+                                <div class="col-lg-12">
+                                    <a onclick="history.back()" class="btn btn-danger mr-5"><i class="fa fa-reply"></i>&nbsp;Quay lại</a>
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i>Hoàn thành</button>
+
+                                </div>
+                            </div>
+                        </div>
+             </form>
+
+
+</div>
+
+<script src="https://cdn.ckeditor.com/ckeditor5/41.0.0/classic/ckeditor.js"></script>
+
+    @* <script src="~/admin/assets/ckeditor5-41.0.0/build/ckeditor.js"></script> *@
+    <script>
+        let editor;
+
+        ClassicEditor
+            .create(document.querySelector('#NoiDung'), {
+                link: {
+                    defaultProtocol: 'http://'
+                }
+            })
+            .then(newEditor => {
+                editor = newEditor;
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>

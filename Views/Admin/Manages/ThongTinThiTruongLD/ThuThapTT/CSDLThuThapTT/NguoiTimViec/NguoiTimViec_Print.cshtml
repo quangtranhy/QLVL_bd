@@ -1,0 +1,1185 @@
+﻿@{
+    Layout = "_LayoutPrint";
+    var record_id = 1;
+    var DmLoaiHinhHdkt = (IEnumerable<QLViecLam.Models.Admin.Manages.DanhMuc.DmLoaiHinhHdkt>)ViewData["DmLoaiHinhHdkt"]!;
+}
+
+
+<table id="data_header" style="font-size: 12px">
+    <tbody>
+        <tr>
+            <td colspan="3" style="text-align: left">
+                Tỉnh/thành phố:.................................<br>
+                Quận/huyện/thị xã:............................<br>
+                Xã/phường/thị trấn:...........................
+            </td>
+            <td style="text-align: right;">
+                Mẫu số 02
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <p style="text-align: center;font-weight: bold;font-size: 20px; text-transform: uppercase;">
+                    PHIẾU THÔNG TIN NGƯỜI TÌM VIỆC<br>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <p style="text-align: center">
+
+                </p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <!--VABWAFAATABfADIAMAAyADMAMAA3ADAANwA=-->
+    <tbody>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;text-align:left
+  ">
+                <p style="margin-top:6.0pt">
+                    <b>
+                        <span style="font-size:9.5pt;
+ ">1. Thông tin cá nhân</span>
+                    </b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="50%" colspan="6" style="width:50.04%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Họ và tên: …………………………………………</span>
+                </p>
+            </td>
+            <td width="49%" colspan="4" style="width:49.96%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Số CCCD/CMND: ……………………………….</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="50%" colspan="6" style="width:50.04%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Mã số BHXH ……………………………………..</span>
+                </p>
+            </td>
+            <td width="49%" colspan="4" style="width:49.96%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        Ngày sinh: ………… Giới tính: [  ]
+                        Nam   [  ] Nữ
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="50%" colspan="6" style="width:50.04%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Dân tộc: …………………………………………..</span>
+                </p>
+            </td>
+            <td width="49%" colspan="4" style="width:49.96%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Tôn giáo: ………………………………………….</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        Nơi thường trú: Tỉnh ………………… huyện ………………… xã
+                        ……………………………………
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        Địa chỉ cụ thể:
+                        ……………………………………………………………………………………………..
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        Nơi ở hiện nay: Tỉnh ………………… huyện …………………
+                        xã ……………………………………
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        Địa chỉ cụ thể:
+                        ……………………………………………………………………………………………..
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <b>
+                        <span style="font-size:9.5pt;
+ ">2. Trình độ học vấn, chuyên môn kỹ thuật</span>
+                    </b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        Trình độ học vấn:    [
+                        ] Chưa tốt nghiệp Tiểu học
+                        [  ] Tốt nghiệp Tiểu học
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        [  ] Tốt nghiệp Trung học cơ sở
+                        [  ] Tốt nghiệp Trung học phổ thông
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="15%" colspan="2" style="width:15.2%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;">Trình độ CMKT cao nhất:</span></p>
+            </td>
+            <td width="34%" colspan="4" style="width:34.84%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] Chưa qua đào tạo</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        [  ] Chứng chỉ nghề dưới 3 tháng
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] Trung cấp  </span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] Đại học  </span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] Tiến sĩ</span>
+                </p>
+            </td>
+            <td width="30%" colspan="3" style="width:30.7%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] CNKT không bằng</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] Sơ cấp</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] Cao đẳng</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] Thạc sĩ</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ "> </span>
+                </p>
+            </td>
+            <td width="19%" style="width:19.26%;text-align:leftborder-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Chuyên ngành đào tạo:</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">…………………</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">…………………</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">…………………</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="15%" colspan="2" style="width:15.2%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;">Trình độ CMKT khác:</span></p>
+            </td>
+            <td width="34%" colspan="4" style="width:34.84%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] Chưa qua đào tạo</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        [  ] Chứng chỉ nghề dưới 3 tháng
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] Trung cấp  </span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] Đại học  </span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] Tiến sĩ</span>
+                </p>
+            </td>
+            <td width="30%" colspan="3" style="width:30.7%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] CNKT không bằng</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] Sơ cấp</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] Cao đẳng</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">[  ] Thạc sĩ</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ "> </span>
+                </p>
+            </td>
+            <td width="19%" style="width:19.26%;text-align:leftborder-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Chuyên ngành đào tạo:</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">…………………</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">…………………</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">…………………</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="15%" colspan="2" style="width:15.2%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;">Trình độ khác</span></p>
+            </td>
+            <td width="84%" colspan="8" style="width:84.8%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">1: …………………………………………………………………………………………</span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">2: …………………………………………………………………………………………</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        Trình độ kỹ năng nghề (nếu có):
+                        …………………………………… Bậc: …………………………..
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="15%" colspan="2" style="width:15.2%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;">Trình độ ngoại ngữ</span></p>
+            </td>
+            <td width="84%" colspan="8" style="width:84.8%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Ngoại ngữ
+                        1: …………………………………………. Chứng chỉ …………………….
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Khả năng
+                        sử dụng: [  ] Tốt        [  ] Khá
+                        [  ] Trung
+                        bình
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Ngoại ngữ
+                        2: …………………………………………. Chứng chỉ .……………………
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Khả năng
+                        sử dụng: [  ] Tốt        [  ] Khá
+                        [  ]
+                        Trung bình
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="15%" colspan="2" style="width:15.2%;border:solid windowtext 1.0pt;">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;">Trình độ tin học</span></p>
+            </td>
+            <td width="84%" colspan="8" style="width:84.8%;text-align:leftborder-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [
+                        ] Tin học văn phòng…………………..……………….…………..…………….....…
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Khả năng
+                        sử dụng: [  ] Tốt        [  ] Khá
+                        [  ]
+                        Trung bình
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [
+                        ] Khác: ………………………………………….……………….…..………………….
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Khả năng
+                        sử dụng: [  ] Tốt        [  ] Khá
+                        [  ]
+                        Trung bình
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="15%" colspan="2" style="width:15.2%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;">Kỹ năng mềm</span></p>
+            </td>
+            <td width="84%" colspan="8" style="width:84.8%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [
+                        ] Giao tiếp
+
+                        [  ] Thuyết trình
+
+                        [  ] Quản lý thời gian
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [
+                        ] Quản lý nhân sự          [  ]
+                        Tổng hợp, báo cáo    [  ] Thích ứng
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [
+                        ] Làm việc nhóm
+                        [  ] Làm việc độc lập        [  ] Chịu
+                        được áp lực công việc
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [
+                        ] Theo dõi giám sát       [  ] Tư duy phản biện
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [  ]
+                        Kỹ năng mềm khác: ……………………………………………………………………
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <b>
+                        <span style="font-size:9.5pt;
+ ">3. Kinh nghiệm làm việc (nếu có)</span>
+                    </b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="28%" colspan="4" style="width:28.04%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;">Tên đơn vị</span></p>
+            </td>
+            <td width="22%" colspan="3" style="width:22.72%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;">Chức vụ</span></p>
+            </td>
+            <td width="23%" style="width:23.58%;text-align:leftborder-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;">Công việc chính</span></p>
+            </td>
+            <td width="25%" colspan="2" style="width:25.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;">Thời gian</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="28%" colspan="4" style="width:28.04%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;color:black">.……………………</span></p>
+            </td>
+            <td width="22%" colspan="3" style="width:22.72%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;color:black">.……………………</span></p>
+            </td>
+            <td width="23%" style="width:23.58%;text-align:leftborder-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;color:black">.……………………</span></p>
+            </td>
+            <td width="25%" colspan="2" style="width:25.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ "> …../20….. -…../20.....</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="28%" colspan="4" style="width:28.04%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;color:black">.……………………</span></p>
+            </td>
+            <td width="22%" colspan="3" style="width:22.72%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;color:black">.……………………</span></p>
+            </td>
+            <td width="23%" style="width:23.58%;text-align:leftborder-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;color:black">.……………………</span></p>
+            </td>
+            <td width="25%" colspan="2" style="width:25.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ "> …../20….. -…../20.....</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="28%" colspan="4" style="width:28.04%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;color:black">.……………………</span></p>
+            </td>
+            <td width="22%" colspan="3" style="width:22.72%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;color:black">.……………………</span></p>
+            </td>
+            <td width="23%" style="width:23.58%;text-align:leftborder-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;color:black">.……………………</span></p>
+            </td>
+            <td width="25%" colspan="2" style="width:25.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ "> …../20….. -…../20.....</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        [  ] Đã từng làm việc ở nước ngoài tại
+                        <span style="color:black">.…………………….…………………….……………………</span>
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <b>
+                        <span style="font-size:9.5pt;
+ ">4. Việc làm cần tìm</span>
+                    </b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        Loại hình doanh nghiệp: [  ] Nhà nước
+                        [  ] Ngoài nhà nước
+                        [  ] Có vốn đầu tư nước ngoài
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Tên công việc: <span style="color:black">.…………………….…………………….…………………….…………………….………</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Mô tả công việc: <span style="color:black">.…………………….…………………….…………………….………………………….</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Mã nghề<sup>1</sup>:</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="50%" colspan="7" style="width:50.76%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Cấp
+                        1:…………………………………………..
+                    </span>
+                </p>
+            </td>
+            <td width="49%" colspan="3" style="width:49.24%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Cấp
+                        2:…………………………………………..
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="50%" colspan="7" style="width:50.76%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Cấp
+                        3:…………………………………………..
+                    </span>
+                </p>
+            </td>
+            <td width="49%" colspan="3" style="width:49.24%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Cấp
+                        4:…………………………………………..
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr style="height:34.85pt">
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left;height:34.85pt">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Chức vụ*:
+                        [  ] Nhân
+                        viên
+                        [  ] Quản
+                        lý            [
+                        ] Lãnh đạo
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ;color:black">
+                        [  ] Khác (ghi rõ): ………………………………………………………………………….
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr style="height:34.85pt">
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left;height:34.85pt">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        Kinh nghiệm làm việc trong lĩnh vực cần
+                        tìm:
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ;color:black">
+                        [  ] Không có
+                        [  ] Dưới 1 năm   [  ] Từ 1 đến 2 năm   [
+                        ] Từ 2 đến 5 năm   [  ] Trên 5 năm
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="15%" colspan="3" rowspan="2" style="width:15.32%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;">Nơi làm việc ưu tiên</span></p>
+            </td>
+            <td width="84%" colspan="7" style="width:84.68%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        Ưu tiên 1: Tỉnh ………………..... Quận/huyện/KCN/KKT
+                        ………………………….
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="84%" colspan="7" style="width:84.68%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        Ưu tiên 2: Tỉnh ………………..... Quận/huyện/KCN/KKT
+                        ………………………….
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr style="height:34.85pt">
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left;height:34.85pt">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Loại hợp
+                        đồng LĐ:      [  ] Không xác định thời hạn
+                        [  ] Xác định thời hạn
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [  ] Hợp đồng theo mùa vụ hoặc công việc nhất định
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Khả năng
+                        đáp ứng: [  ] Làm ca      [  ] Đi công
+                        tác      [  ] Đi biệt phái
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Hình thức
+                        làm việc: [  ] Toàn thời gian      [  ]
+                        Bán thời gian
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Mục đích
+                        làm việc: [  ] Làm việc lâu dài      [  ]
+                        Làm việc tạm thời      [  ] Làm thêm
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="10" style="width:100.0%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        Mức
+                        lương*:     - Lương tháng:
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [  ] Dưới 5 triệu đồng;   [  ] 5-10 triệu đồng;
+                        [  ] 10-20 triệu đồng;
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [  ] 20-50 triệu đồng;      [  ] &gt;50 triệu đồng
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        - [  ] Lương ngày …...…………….đồng/ngày
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        - [  ] Lương giờ …...………….….đồng/giờ
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        - [  ] Thỏa thuận khi phỏng vấn
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        - [  ] Hoa hồng theo doanh thu/sản phẩm
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="11%" rowspan="5" style="width:11.58%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;">Chế độ phúc lợi</span></p>
+            </td>
+            <td width="88%" colspan="9" style="width:88.42%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        Hỗ trợ ăn: [  ] 1 bữa
+                        [  ] 2 bữa     [  ] 3 bữa
+                        [  ] Bằng tiền
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="88%" colspan="9" style="width:88.42%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        [  ] Đóng BHXH, BHYT,
+                        BHTN;   [  ] BH nhân thọ;   [  ] Trợ cấp thôi
+                        việc   [  ] Nhà trẻ
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="88%" colspan="9" style="width:88.42%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        [  ] Xe đưa đón   [  ]
+                        Hỗ trợ đi lại   [  ] Ký túc xá   [  ] Hỗ trợ
+                        nhà ở   [  ] Đào tạo
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="88%" colspan="9" style="width:88.42%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        [  ] Lối đi/thiết bị hỗ trợ cho người
+                        khuyết tật      [  ] Cơ hội thăng tiến
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr style="height:34.85pt">
+            <td width="88%" colspan="9" style="width:88.42%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ;height:34.85pt">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        [  ] Khác
+                        ……………………………………………………………………………………
+                    </span>
+                </p>
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">………………………………………………………………………………………………</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="11%" rowspan="7" style="width:11.58%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p align="center" style="margin-top:6.0pt;text-align:center"><span style="font-size:9.5pt;">Điều kiện làm việc</span></p>
+            </td>
+            <td width="21%" colspan="4" style="width:21.76%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Nơi làm việc</span>
+                </p>
+            </td>
+            <td width="66%" colspan="5" style="width:66.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [
+                        ] Trong nhà;    [  ] Ngoài trời;
+                        [  ] Hỗn hợp
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="21%" colspan="4" style="width:21.76%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Trọng lượng nâng</span>
+                </p>
+            </td>
+            <td width="66%" colspan="5" style="width:66.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [
+                        ] Dưới 5kg    [  ] 5 - 20 kg    [  ]
+                        Trên 20kg
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="21%" colspan="4" style="width:21.76%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Đứng hoặc đi lại</span>
+                </p>
+            </td>
+            <td width="66%" colspan="5" style="width:66.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [
+                        ] Hầu như không có;    [  ] Mức trung
+                        bình;    [  ] Cần đứng/đi lại nhiều
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="21%" colspan="4" style="width:21.76%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Nghe nói</span>
+                </p>
+            </td>
+            <td width="66%" colspan="5" style="width:66.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [
+                        ] Không cần thiết;    [  ] Nghe nói cơ bản;
+                        [  ] Quan trọng
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="21%" colspan="4" style="width:21.76%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Thị lực</span>
+                </p>
+            </td>
+            <td width="66%" colspan="5" style="width:66.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [
+                        ] Mức bình thường;    [  ] Nhìn được vật/chi tiết nhỏ;
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="21%" colspan="4" style="width:21.76%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Thao tác bằng tay</span>
+                </p>
+            </td>
+            <td width="66%" colspan="5" style="width:66.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [
+                        ] Lắp ráp đồ vật lớn;    [  ] Lắp ráp đồ vật nhỏ;
+                        [  ] Lắp ráp đồ vật rất nhỏ
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="21%" colspan="4" style="width:21.76%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Dùng 2 tay</span>
+                </p>
+            </td>
+            <td width="66%" colspan="5" style="width:66.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt;">
+                    <span style="font-size:9.5pt;color:black">
+                        [
+                        ] Cần 2 tay;   [  ] Đôi khi cần 2 tay;   [  ]
+                        Chỉ cần 1 tay;   [  ] Trái;   [  ] Phải
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="33%" colspan="5" style="width:33.34%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Sẵn sàng làm việc</span>
+                </p>
+            </td>
+            <td width="66%" colspan="5" style="width:66.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        [  ] Làm việc
+                        ngay      [  ] Làm việc sau (……..) tháng
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="33%" colspan="5" style="width:33.34%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Hình thức tuyển dụng</span>
+                </p>
+            </td>
+            <td width="66%" colspan="5" style="width:66.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">
+                        [  ] Trực tiếp  [  ] Qua điện
+                        thoại  [  ] Phỏng vấn online  [  ] Nộp CV
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="33%" colspan="5" rowspan="3" style="width:33.34%;border:solid windowtext 1.0pt;
+  text-align:left">
+                <p style="margin-top:6.0pt">
+                    <b>
+                        <span style="font-size:9.5pt;
+ ">5. Thông tin liên hệ</span>
+                    </b>
+                </p>
+            </td>
+            <td width="66%" colspan="5" style="width:66.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Số điện thoại: …………………………………………………………..</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="66%" colspan="5" style="width:66.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Email: ……………………………………………………………………</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="66%" colspan="5" style="width:66.66%;text-align:leftborder-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  ">
+                <p style="margin-top:6.0pt">
+                    <span style="font-size:9.5pt;
+ ">Liên hệ khác (nếu có): …………………………………………………</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="86" style="width:64.5pt;"></td>
+            <td width="27" style="width:20.25pt;"></td>
+            <td width="1" style="width:.75pt;"></td>
+            <td width="95" style="width:71.25pt;"></td>
+            <td width="40" style="width:30.0pt;"></td>
+            <td width="125" style="width:93.75pt;"></td>
+            <td width="5" style="width:3.75pt;"></td>
+            <td width="176" style="width:132.0pt;"></td>
+            <td width="48" style="width:.5in;"></td>
+            <td width="144" style="width:1.5in;"></td>
+        </tr>
+    </tbody>
+</table>
+
+<table id="data_footer" width="96%" cellspacing="0" cellpadding="0" style="margin: 20px auto;text-align: center; height:200px">
+    <tbody>
+        <tr>
+            <td width="40%" style="text-align: left; vertical-align: top;">
+            </td>
+            <td style="vertical-align: top;">
+                <i>Ngày......tháng......năm...........</i><br>
+                <b>Người cung cấp thông tin</b><br>
+                <i>(Chữ ký, dấu)</i>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,811 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = QLViecLam
+build_property.RootNamespace = QLViecLam
+build_property.ProjectDir = D:\QLViecLam\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\QLViecLam
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/QLViecLam/Views/Admin/Error/Page.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRXJyb3JcUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Error/PageSuccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRXJyb3JcUGFnZVN1Y2Nlc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Error/SessionOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRXJyb3JcU2Vzc2lvbk91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Home/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSG9tZVxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Home/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSG9tZVxEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Home/ThemeSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSG9tZVxUaGVtZVNldHRpbmdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/ChucVu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXENodWNWdVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/ChucVu/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXENodWNWdVxNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmDanToc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtRGFuVG9jXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmDanToc/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtRGFuVG9jXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmDoiTuongChinhSach/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtRG9pVHVvbmdDaGluaFNhY2hcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmDoiTuongChinhSach/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtRG9pVHVvbmdDaGluaFNhY2hcTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmHinhThucDaoTao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtSGluaFRodWNEYW9UYW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmHinhThucDaoTao/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtSGluaFRodWNEYW9UYW9cTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmHinhThucDoanhNghiep/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtSGluaFRodWNEb2FuaE5naGllcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmHinhThucDoanhNghiep/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtSGluaFRodWNEb2FuaE5naGllcFxNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmHinhThucThamGia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtSGluaFRodWNUaGFtR2lhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmHinhThucThamGia/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtSGluaFRodWNUaGFtR2lhXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmKhuCongNghiep/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtS2h1Q29uZ05naGllcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmKhuCongNghiep/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtS2h1Q29uZ05naGllcFxNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmLoaiHinhDaoTao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtTG9haUhpbmhEYW9UYW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmLoaiHinhDaoTao/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtTG9haUhpbmhEYW9UYW9cTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmLoaiViecLam/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtTG9haVZpZWNMYW1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmLoaiViecLam/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtTG9haVZpZWNMYW1cTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmNghanhHoc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtTmdoYW5oSG9jXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmNghanhHoc/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtTmdoYW5oSG9jXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmNgheDaoTao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtTmdoZURhb1Rhb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmNgheDaoTao/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtTmdoZURhb1Rhb1xNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmNguonViecLam/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtTmd1b25WaWVjTGFtXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmNguonViecLam/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtTmd1b25WaWVjTGFtXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmQuocGia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtUXVvY0dpYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmQuocGia/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtUXVvY0dpYVxNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmThoiGianLamViec/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVGhvaUdpYW5MYW1WaWVjXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmThoiGianLamViec/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVGhvaUdpYW5MYW1WaWVjXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmTinhTrangTanTat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVGluaFRyYW5nVGFuVGF0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmTinhTrangTanTat/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVGluaFRyYW5nVGFuVGF0XE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmTinhTrangViecLam/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVGluaFRyYW5nVmllY0xhbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmTinhTrangViecLam/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVGluaFRyYW5nVmllY0xhbVxNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmTonGiao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVG9uR2lhb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmTonGiao/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVG9uR2lhb1xNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmTrangThaiViecLam/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVHJhbmdUaGFpVmllY0xhbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmTrangThaiViecLam/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVHJhbmdUaGFpVmllY0xhbVxNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmTrinhDoHocVan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVHJpbmhEb0hvY1ZhblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmTrinhDoHocVan/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVHJpbmhEb0hvY1ZhblxNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmTrinhDoNgoaiNgu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVHJpbmhEb05nb2FpTmd1XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmTrinhDoNgoaiNgu/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVHJpbmhEb05nb2FpTmd1XE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmTrinhDoTinHoc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVHJpbmhEb1RpbkhvY1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmTrinhDoTinHoc/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtVHJpbmhEb1RpbkhvY1xNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmXuatKhauLaoDong/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtWHVhdEtoYXVMYW9Eb25nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DmXuatKhauLaoDong/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERtWHVhdEtoYXVMYW9Eb25nXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DoiTuongUuTien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERvaVR1b25nVXVUaWVuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/DoiTuongUuTien/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXERvaVR1b25nVXVUaWVuXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/HieuLucHDLD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXEhpZXVMdWNIRExEXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/HieuLucHDLD/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXEhpZXVMdWNIRExEXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/HinhThucLamViec/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXEhpbmhUaHVjTGFtVmllY1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/HinhThucLamViec/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXEhpbmhUaHVjTGFtVmllY1xNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/LoaiHinhHDKT/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXExvYWlIaW5oSERLVFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/LoaiHinhHDKT/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXExvYWlIaW5oSERLVFxNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/LoaiLaoDong/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXExvYWlMYW9Eb25nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/LoaiLaoDong/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXExvYWlMYW9Eb25nXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/MaNgheTrinhDo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXE1hTmdoZVRyaW5oRG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/MaNgheTrinhDo/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXE1hTmdoZVRyaW5oRG9cTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/NghanhNghe/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXE5naGFuaE5naGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/NghanhNghe/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXE5naGFuaE5naGVcTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/NghanhSXKD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXE5naGFuaFNYS0RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/NghanhSXKD/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXE5naGFuaFNYS0RcTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/NgheCongViec/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXE5naGVDb25nVmllY1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/NgheCongViec/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXE5naGVDb25nVmllY1xNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/NguyenNhanThatNghiep/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXE5ndXllbk5oYW5UaGF0TmdoaWVwXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/NguyenNhanThatNghiep/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXE5ndXllbk5oYW5UaGF0TmdoaWVwXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/TinhTrangThamGiaHDKTCt2/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXFRpbmhUcmFuZ1RoYW1HaWFIREtUQ3QyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/TinhTrangThamGiaHDKTCt2/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXFRpbmhUcmFuZ1RoYW1HaWFIREtUQ3QyXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/TinhTrangThamGiaHDKTCt/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXFRpbmhUcmFuZ1RoYW1HaWFIREtUQ3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/TinhTrangThamGiaHDKTCt/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXFRpbmhUcmFuZ1RoYW1HaWFIREtUQ3RcTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/TinhTrangThamGiaHDKT/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXFRpbmhUcmFuZ1RoYW1HaWFIREtUXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/TinhTrangThamGiaHDKT/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXFRpbmhUcmFuZ1RoYW1HaWFIREtUXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/TrinhDoCMKT/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXFRyaW5oRG9DTUtUXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/TrinhDoCMKT/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXFRyaW5oRG9DTUtUXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/TrinhDoGDPT/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXFRyaW5oRG9HRFBUXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/DanhMuc/TrinhDoGDPT/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xEYW5oTXVjXFRyaW5oRG9HRFBUXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/KeHoachThuThapTT/BaoCaoTongHop/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXEtlSG9hY2hUaHVUaGFwVFRcQmFvQ2FvVG9uZ0hvcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/KeHoachThuThapTT/DanhSach/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXEtlSG9hY2hUaHVUaGFwVFRcRGFuaFNhY2hcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/KeHoachThuThapTT/DanhSach/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXEtlSG9hY2hUaHVUaGFwVFRcRGFuaFNhY2hcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/KeHoachThuThapTT/DanhSach/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXEtlSG9hY2hUaHVUaGFwVFRcRGFuaFNhY2hcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/KeHoachThuThapTT/DanhSach/KeHoachThuThapThongTin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXEtlSG9hY2hUaHVUaGFwVFRcRGFuaFNhY2hcS2VIb2FjaFRodVRoYXBUaG9uZ1Rpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/KeHoachThuThapTT/DanhSach/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXEtlSG9hY2hUaHVUaGFwVFRcRGFuaFNhY2hcTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/KeHoachThuThapTT/DanhSach/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXEtlSG9hY2hUaHVUaGFwVFRcRGFuaFNhY2hcU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/KeHoachThuThapTT/XetDuyet/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXEtlSG9hY2hUaHVUaGFwVFRcWGV0RHV5ZXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/KeHoachThuThapTT/XetDuyet/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXEtlSG9hY2hUaHVUaGFwVFRcWGV0RHV5ZXRcTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/BangTinThiTruongLD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXEJhbmdUaW5UaGlUcnVvbmdMRFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/DangKyGTCungUng/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXERhbmdLeUdUQ3VuZ1VuZ1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/DangKyGTCungUng/DangKyGTCungUng_Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXERhbmdLeUdUQ3VuZ1VuZ1xEYW5nS3lHVEN1bmdVbmdfUHJpbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/DangKyGTCungUng/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXERhbmdLeUdUQ3VuZ1VuZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/DangKyGTCungUng/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXERhbmdLeUdUQ3VuZ1VuZ1xNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/DangKyGTCungUng/TuyenDung.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXERhbmdLeUdUQ3VuZ1VuZ1xUdXllbkR1bmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/DangKyGTCungUng/ViTriTuyenDung.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXERhbmdLeUdUQ3VuZ1VuZ1xWaVRyaVR1eWVuRHVuZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/LuuTruDuLieuDoiSoat/Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXEx1dVRydUR1TGlldURvaVNvYXRcUHJpbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/LuuTruTTTongHop/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXEx1dVRydVRUVG9uZ0hvcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/LuuTruTTTongHop/TongHopHuyen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXEx1dVRydVRUVG9uZ0hvcFxUb25nSG9wSHV5ZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/LuuTruTTTongHop/TongHopTinh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXEx1dVRydVRUVG9uZ0hvcFxUb25nSG9wVGluaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/LuuTruTTTongHop/TongHopXa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXEx1dVRydVRUVG9uZ0hvcFxUb25nSG9wWGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/NguoiLaoDong/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXE5ndW9pTGFvRG9uZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/NguoiLaoDong/NguoiLaoDong_Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXE5ndW9pTGFvRG9uZ1xOZ3VvaUxhb0RvbmdfUHJpbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/NguoiTimViec/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXE5ndW9pVGltVmllY1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/NguoiTimViec/NguoiTimViec_Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXE5ndW9pVGltVmllY1xOZ3VvaVRpbVZpZWNfUHJpbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/NhuCauTuyenDungLD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXE5odUNhdVR1eWVuRHVuZ0xEXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/NhuCauTuyenDungLD/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXE5odUNhdVR1eWVuRHVuZ0xEXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/NhuCauTuyenDungLD/NhuCauTuyenDungLD_Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXE5odUNhdVR1eWVuRHVuZ0xEXE5odUNhdVR1eWVuRHVuZ0xEX1ByaW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/SoGhiChepTTLD/CauLD_Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXFNvR2hpQ2hlcFRUTERcQ2F1TERfUHJpbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/SoGhiChepTTLD/CungLD_Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXFNvR2hpQ2hlcFRUTERcQ3VuZ0xEX1ByaW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/CSDLThuThapTT/SoGhiChepTTLD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxDU0RMVGh1VGhhcFRUXFNvR2hpQ2hlcFRUTERcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/HeThongTruyVanTT/CauLaoDong/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxIZVRob25nVHJ1eVZhblRUXENhdUxhb0RvbmdcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/HeThongTruyVanTT/CauLaoDong/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxIZVRob25nVHJ1eVZhblRUXENhdUxhb0RvbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/HeThongTruyVanTT/CungCauLaoDong/DanhSachCungLDTuongUng.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxIZVRob25nVHJ1eVZhblRUXEN1bmdDYXVMYW9Eb25nXERhbmhTYWNoQ3VuZ0xEVHVvbmdVbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/HeThongTruyVanTT/CungCauLaoDong/DanhSachTuyenDung.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxIZVRob25nVHJ1eVZhblRUXEN1bmdDYXVMYW9Eb25nXERhbmhTYWNoVHV5ZW5EdW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/HeThongTruyVanTT/CungCauLaoDong/DanhSachViTriTuyenDung.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxIZVRob25nVHJ1eVZhblRUXEN1bmdDYXVMYW9Eb25nXERhbmhTYWNoVmlUcmlUdXllbkR1bmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/HeThongTruyVanTT/CungCauLaoDong/PrintMau03aPL01.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxIZVRob25nVHJ1eVZhblRUXEN1bmdDYXVMYW9Eb25nXFByaW50TWF1MDNhUEwwMS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/HeThongTruyVanTT/CungLaoDong/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxIZVRob25nVHJ1eVZhblRUXEN1bmdMYW9Eb25nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/ThongTinThiTruongLD/ThuThapTT/HeThongTruyVanTT/CungLaoDong/Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUaG9uZ1RpblRoaVRydW9uZ0xEXFRodVRoYXBUVFxIZVRob25nVHJ1eVZhblRUXEN1bmdMYW9Eb25nXFByaW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/BanTinTuc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxCYW5UaW5UdWNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/BanTinTuc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxCYW5UaW5UdWNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/BanTinTuc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxCYW5UaW5UdWNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/BanTinTuc/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxCYW5UaW5UdWNcU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/BaoCaoLDNuocNgoai/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxCYW9DYW9MRE51b2NOZ29haVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/BaoCaoLDNuocNgoai/Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxCYW9DYW9MRE51b2NOZ29haVxQcmludC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/BaoCaoNhuCauGiaiQuyetVl/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxCYW9DYW9OaHVDYXVHaWFpUXV5ZXRWbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/BaoCaoTaiNanLD/Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxCYW9DYW9UYWlOYW5MRFxQcmludC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/BaoCaoTheoMucThuThap/BaoHiemXaHoi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxCYW9DYW9UaGVvTXVjVGh1VGhhcFxCYW9IaWVtWGFIb2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/BaoCaoTheoMucThuThap/BaoHiemYTe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxCYW9DYW9UaGVvTXVjVGh1VGhhcFxCYW9IaWVtWVRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/BaoCaoTheoMucThuThap/DonViSuDungLaoDong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxCYW9DYW9UaGVvTXVjVGh1VGhhcFxEb25WaVN1RHVuZ0xhb0RvbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/BaoCaoTheoMucThuThap/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxCYW9DYW9UaGVvTXVjVGh1VGhhcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/BaoCaoTheoMucThuThap/MucThuNhap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxCYW9DYW9UaGVvTXVjVGh1VGhhcFxNdWNUaHVOaGFwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/BaoCaoThongKeTheoDVHC/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxCYW9DYW9UaG9uZ0tlVGhlb0RWSENcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/BaoCaoThongKeTheoDVHC/Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxCYW9DYW9UaG9uZ0tlVGhlb0RWSENcUHJpbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/BaoCaoThongKeTuyChon/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxCYW9DYW9UaG9uZ0tlVHV5Q2hvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/BaoCaoThongKeTuyChon/Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxCYW9DYW9UaG9uZ0tlVHV5Q2hvblxQcmludC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/BaoCaoTTThiTruongLD/BaoCaoTTThiTruongLD_Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxCYW9DYW9UVFRoaVRydW9uZ0xEXEJhb0Nhb1RUVGhpVHJ1b25nTERfUHJpbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/XuatBaoCaoTTCungCau/CauLD_Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxYdWF0QmFvQ2FvVFRDdW5nQ2F1XENhdUxEX1ByaW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/XuatBaoCaoTTCungCau/CungLD_Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxYdWF0QmFvQ2FvVFRDdW5nQ2F1XEN1bmdMRF9QcmludC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/BaoCaoNghiepVu/XuatBaoCaoTTCungCau/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxCYW9DYW9OZ2hpZXBWdVxYdWF0QmFvQ2FvVFRDdW5nQ2F1XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/TraCuuBaoCaoTongHop/BaoCaoTinhHinhSuDungLD/Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxUcmFDdXVCYW9DYW9Ub25nSG9wXEJhb0Nhb1RpbmhIaW5oU3VEdW5nTERcUHJpbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/TraCuuBaoCaoTongHop/TraCuuTTCungCauLD/CauLaoDong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxUcmFDdXVCYW9DYW9Ub25nSG9wXFRyYUN1dVRUQ3VuZ0NhdUxEXENhdUxhb0RvbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/TraCuuBaoCaoTongHop/TraCuuTTCungCauLD/CungLaoDong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxUcmFDdXVCYW9DYW9Ub25nSG9wXFRyYUN1dVRUQ3VuZ0NhdUxEXEN1bmdMYW9Eb25nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/HeThongBaoCaoThongKe/TraCuuBaoCaoTongHop/TraCuuTTCungCauLD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxIZVRob25nQmFvQ2FvVGhvbmdLZVxUcmFDdXVCYW9DYW9Ub25nSG9wXFRyYUN1dVRUQ3VuZ0NhdUxEXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/QuanLyDanhMucDuLieu/DmNguoiTimViec/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxRdWFuTHlEYW5oTXVjRHVMaWV1XERtTmd1b2lUaW1WaWVjXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/QuanLyDanhMucDuLieu/DmNguoiTimViec/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxRdWFuTHlEYW5oTXVjRHVMaWV1XERtTmd1b2lUaW1WaWVjXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/QuanLyDanhMucDuLieu/DmNguoiTimViec/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxRdWFuTHlEYW5oTXVjRHVMaWV1XERtTmd1b2lUaW1WaWVjXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/QuanLyDanhMucDuLieu/DmNhaTuyenDung/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxRdWFuTHlEYW5oTXVjRHVMaWV1XERtTmhhVHV5ZW5EdW5nXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/QuanLyDanhMucDuLieu/DmNhaTuyenDung/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxRdWFuTHlEYW5oTXVjRHVMaWV1XERtTmhhVHV5ZW5EdW5nXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/QuanLyDanhMucDuLieu/DmNhaTuyenDung/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxRdWFuTHlEYW5oTXVjRHVMaWV1XERtTmhhVHV5ZW5EdW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/QuanLyDanhMucDuLieu/DmToChucDonVi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxRdWFuTHlEYW5oTXVjRHVMaWV1XERtVG9DaHVjRG9uVmlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/QuanLyDanhMucDuLieu/DmToChucDonVi/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxRdWFuTHlEYW5oTXVjRHVMaWV1XERtVG9DaHVjRG9uVmlcTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/QuanTriHeThong/DmDonVi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxRdWFuVHJpSGVUaG9uZ1xEbURvblZpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/QuanTriHeThong/DmDonVi/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxRdWFuVHJpSGVUaG9uZ1xEbURvblZpXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/CheDoChinhSach/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XENoZURvQ2hpbmhTYWNoXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/CheDoChinhSach/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XENoZURvQ2hpbmhTYWNoXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/DieuKienLamViec/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XERpZXVLaWVuTGFtVmllY1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/DieuKienLamViec/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XERpZXVLaWVuTGFtVmllY1xNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/DonViQuanLyNLDTheoHoGD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XERvblZpUXVhbkx5TkxEVGhlb0hvR0RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/DonViQuanLyNLDTheoHoGD/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XERvblZpUXVhbkx5TkxEVGhlb0hvR0RcTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/DonViThuThapTT/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XERvblZpVGh1VGhhcFRUXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/DonViThuThapTT/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XERvblZpVGh1VGhhcFRUXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/PhuongTienLamViec/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XFBodW9uZ1RpZW5MYW1WaWVjXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/PhuongTienLamViec/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XFBodW9uZ1RpZW5MYW1WaWVjXE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/RuiRoLamViec/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XFJ1aVJvTGFtVmllY1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/RuiRoLamViec/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XFJ1aVJvTGFtVmllY1xNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/ThongTinCung/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XFRob25nVGluQ3VuZ1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/ThongTinCung/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XFRob25nVGluQ3VuZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/ThongTinCung/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XFRob25nVGluQ3VuZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/ThongTinNguoiNuocNgoai/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XFRob25nVGluTmd1b2lOdW9jTmdvYWlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/ThongTinNguoiNuocNgoai/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XFRob25nVGluTmd1b2lOdW9jTmdvYWlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/ThongTinCung_Cau/ThongTinNguoiNuocNgoai/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUaG9uZ1RpbkN1bmdfQ2F1XFRob25nVGluTmd1b2lOdW9jTmdvYWlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/TongHopPhanTichDuDoan/BaoHiemThatNghiep.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUb25nSG9wUGhhblRpY2hEdURvYW5cQmFvSGllbVRoYXROZ2hpZXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/TongHopPhanTichDuDoan/BaoHiemXaHoi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUb25nSG9wUGhhblRpY2hEdURvYW5cQmFvSGllbVhhSG9pLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/TongHopPhanTichDuDoan/DuBaoNhuCauLaoDong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUb25nSG9wUGhhblRpY2hEdURvYW5cRHVCYW9OaHVDYXVMYW9Eb25nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/TongHopPhanTichDuDoan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUb25nSG9wUGhhblRpY2hEdURvYW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/TongHopPhanTichDuDoan/LucLuongLaoDong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUb25nSG9wUGhhblRpY2hEdURvYW5cTHVjTHVvbmdMYW9Eb25nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/TongHopPhanTichDuDoan/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUb25nSG9wUGhhblRpY2hEdURvYW5cTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/TongHopPhanTichDuDoan/MucThuNhap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUb25nSG9wUGhhblRpY2hEdURvYW5cTXVjVGh1TmhhcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/TongHopPhanTichDuDoan/SoLieuNganhNghe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUb25nSG9wUGhhblRpY2hEdURvYW5cU29MaWV1TmdhbmhOZ2hlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/TongHopPhanTichDuDoan/SoLieuViecLam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUb25nSG9wUGhhblRpY2hEdURvYW5cU29MaWV1VmllY0xhbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/TongHopPhanTichDuDoan/ThatNghiep.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUb25nSG9wUGhhblRpY2hEdURvYW5cVGhhdE5naGllcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/TongHopPhanTichDuDoan/ThiTruongLaoDong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUb25nSG9wUGhhblRpY2hEdURvYW5cVGhpVHJ1b25nTGFvRG9uZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/TongHopPhanTichDuDoan/TrienVongThiTruongLaoDong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUb25nSG9wUGhhblRpY2hEdURvYW5cVHJpZW5Wb25nVGhpVHJ1b25nTGFvRG9uZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Manages/TongHop_PhanTich_DuDoan/TongHopPhanTichDuDoan/XuHuongTuyenDung.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlc1xUb25nSG9wX1BoYW5UaWNoX0R1RG9hblxUb25nSG9wUGhhblRpY2hEdURvYW5cWHVIdW9uZ1R1eWVuRHVuZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Admin/Systems/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3lzdGVtc1xBdXRoXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Menu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Menu/Manages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxNYW5hZ2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Menu/Manages/Manages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxNYW5hZ2VzXE1hbmFnZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Menu/Manages/ThongTinThiTruongLD/KeHoachThuThapThongTin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxNYW5hZ2VzXFRob25nVGluVGhpVHJ1b25nTERcS2VIb2FjaFRodVRoYXBUaG9uZ1Rpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Menu/Manages/ThongTinThiTruongLD/ThuThapTT.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxNYW5hZ2VzXFRob25nVGluVGhpVHJ1b25nTERcVGh1VGhhcFRULmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Shared/_LayoutPrint.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRQcmludC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Shared/_LayoutReports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRSZXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QLViecLam/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-nu8tgp9pg3

@@ -1,0 +1,71 @@
+﻿@{
+    int record_id = 1;
+    var Xa = (IEnumerable<QLViecLam.Models.Admin.Systems.DmHanhChinh>)ViewData["Xa"]!;
+    var Huyen = (IEnumerable<QLViecLam.Models.Admin.Systems.DmHanhChinh>)ViewData["Huyen"]!;
+
+}
+
+@section custom_style{
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.css" />
+}
+
+@section custom_script{
+    <script type="text/javascript" src="~/Admin/assets/datatables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.js"></script>
+    <script src="~/Admin/assets/datatables/scripts/table-managed.js"></script>
+    <script>
+        $(document).ready(function () {
+            TableManaged.init();
+        });
+
+        $(function () {
+            $('#huyen,#xa').change(function () {
+                var current_path_url = '/NguoiTimViec?';
+                var huyen = '&huyen=' + $('#huyen').val();
+                var xa = '&xa=' + $('#xa').val();
+                var url = current_path_url + huyen + xa;
+                window.location.href = url;
+            })
+        });
+                                                                        /*
+        function updateInput() {
+        var selectedOption = document.getElementById("Madiaban");
+        var selectedLabel = selectedOption.options[selectedOption.selectedIndex].getAttribute("data-label");
+        document.getElementById("test").value = selectedLabel;
+        }
+        */
+    </script>
+}
+
+<div class="card card-custom">
+    <div class="card-header flex-wrap border-0 pt-6 pb-0">
+        <div class="card-title">
+            <h3 class="card-label">
+                Tra cứu thông tin cung lao động theo thời gian
+            </h3>
+        </div>
+        <div class="card-toolbar">
+        </div>
+    </div>
+    <hr />
+    <div class="card-body">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="form-group fv-plugins-icon-container">
+                    <a class="btn font-weight-bolder" asp-controller="TraCuuTTCungCauLD" asp-action="CungLaoDong">
+                        <i class="icon-lg la flaticon2-search text-primary"></i>Tra cứu thông tin cung lao động theo thời gian
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-12">
+                <div class="form-group fv-plugins-icon-container">
+                    <a class="btn font-weight-bolder" asp-controller="TraCuuTTCungCauLD" asp-action="CauLaoDong">
+                        <i class="icon-lg la flaticon2-search text-primary"></i>Tra cứu thông tin cầu lao động theo thời gian
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+﻿<div class="card card-custom">
+    <div class="card-header">
+        <div class="card-title">
+            <h3 class="card-label">
+                @ViewData["Title"]
+                <span class="d-block text-muted pt-2 font-size-sm">
+                    Thêm mới thông tin kế hoạch thu thập thông tin
+                </span>
+            </h3>
+        </div>
+    </div>
+    <!--begin::Form-->
+    <form asp-controller="KeHoachThuThapThongTin" asp-action="Store" method="post">
+        <div class="card-body">
+            @await Html.PartialAsync("~/Views/Admin/Manages/ThongTinThiTruongLD/KeHoachThuThapTT/DanhSach/KeHoachThuThapThongTin.cshtml")
+        </div>
+        <div class="card-footer" style="text-align:center">
+            <a asp-controller="KeHoachThuThapThongTin" asp-action="Index" class="btn btn-danger">
+                <i class="la la-reply"></i>Quay lại
+            </a>&ensp;
+            <button type="reset" class="btn btn-secondary"><i class="la la-refresh"></i>Nhập lại</button>&ensp;
+            <button type="submit" class="btn btn-primary mr-2"><i class="la la-check"></i>Thêm mới</button>
+        </div>
+    </form>
+    <!--end::Form-->
+</div>
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

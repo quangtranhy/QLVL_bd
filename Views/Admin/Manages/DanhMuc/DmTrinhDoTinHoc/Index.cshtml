@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Danh mục trình độ tin học";
+    int record_id = 1;
+}
+
+@model IEnumerable<QLViecLam.Models.Admin.Manages.DanhMuc.DmTrinhDoTinHoc>
+@section custom_style
+{
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.css" />
+}
+
+@section custom_script
+{
+    <script type="text/javascript" src="~/Admin/assets/datatables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.js"></script>
+    <script src="~/Admin/assets/datatables/scripts/table-managed.js"></script>
+    <script>
+        $(document).ready(function () {
+            TableManaged.init();
+        });
+    </script>
+}
+
+<div class="card card-custom">
+    <div class="card-header flex-wrap border-0 pt-6 pb-0">
+        <div class="card-title">
+            <h3 class="card-label">
+                Danh mục trình độ tin học
+            </h3>
+        </div>
+        <div class="card-toolbar">
+            <button type="button" class="btn btn-primary font-weight-bolder" data-target="#Create_Modal" data-toggle="modal">Thêm mới</button>
+        </div>
+    </div>
+    <hr />
+    <div class="card-body">
+        <table class="table table-striped table-bordered table-hover" id="sample_3">
+            <thead>
+                <tr style="text-align:center">
+                    <th style="width:7%">STT</th>
+                    <th>Mã trình độ tin học</th>
+                    <th>Tên trình độ tin học</th>
+                    <th>Mô tả</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td style="text-align:center">@(record_id++)</td>
+                            <td style="text-align:center">@item.MaTrinhDoTinHoc</td>
+                            <td style="text-align:left">@item.TenTrinhDoTinHoc</td>
+                            <td style="text-align:left">@item.MoTa</td>
+                            <td>
+                                <button type="button" class="btn btn-sm btn-clean btn-icon" title="Chỉnh sửa" data-target="#Edit_Modal" data-toggle="modal" onclick="SetEdit('@item.Id')">
+                                    <i class="icon-lg la la-edit text-primary"></i>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-clean btn-icon" title="Xóa" data-toggle="modal" data-target="#Delete_Modal" onclick="SetDelete('@item.Id')">
+                                    <i class="icon-lg la la-trash text-danger"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+    @await Html.PartialAsync("~/Views/Admin/Manages/Danhmuc/DmTrinhDoTinHoc/Modal.cshtml")
+</div>

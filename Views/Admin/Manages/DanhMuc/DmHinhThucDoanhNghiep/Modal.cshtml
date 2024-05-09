@@ -1,0 +1,148 @@
+﻿
+<!--Create Modal-->
+<form asp-controller="DmHinhThucDoanhNghiep" asp-action="Store" method="post" enctype="multipart/form-data" id="form_store">
+    <div class="modal fade" id="Create_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="card-label text-dark">
+                        Thông tin danh mục hình thức doanh nghiệp
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="ki ki-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="form-group fv-plugins-icon-container">
+                                <label><b>Mã hình thức doanh nghiệp</b></label>
+                                <input type="text" id="MaHinhThucDoanhNghiep" name="MaHinhThucDoanhNghiep" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="form-group fv-plugins-icon-container">
+                                <label><b>Tên hình thức doanh nghiệp</b></label>
+                                <input type="text" id="TenHinhThucDoanhNghiep" name="TenHinhThucDoanhNghiep" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="form-group fv-plugins-icon-container">
+                                <label><b>Mô tả</b></label>
+                                <textarea type="text" id="MoTa" name="MoTa" cols="12" rows="3" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-danger font-weight-bold" data-dismiss="modal">Hủy thao tác</button>
+                    <button type="button" class="btn btn-primary font-weight-bold" onclick="CreateValidate()">Đồng ý</button>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+   
+</form>
+
+<!--Edit Modal-->
+<form asp-controller="DmHinhThucDoanhNghiep" asp-action="Update" method="post" enctype="multipart/form-data" id="form_edit">
+    <div class="modal fade" id="Edit_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="card-label text-dark">
+                        Thông tin danh mục
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="ki ki-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body" id="edit_thongtin">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger font-weight-bold" data-dismiss="modal">Hủy thao tác</button>
+                    <button type="button" class="btn btn-primary font-weight-bold" onclick="EditValidate()">Đồng ý</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!--Delete Modal-->
+<form asp-controller="DmHinhThucDoanhNghiep" asp-action="Delete" method="post" enctype="multipart/form-data">
+    <div class="modal fade" id="Delete_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="card-label text-dark">
+                        Đồng ý xóa???
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="ki ki-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row text-left">
+                        <input hidden id="Id" name="Id" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger font-weight-bold" data-dismiss="modal">Hủy thao tác</button>
+                    <button type="submit" class="btn btn-primary font-weight-bold">Đồng ý</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script>
+    function CreateValidate() {
+        if ($('#TenHinhThucDoanhNghiep').val() == '') {
+            toastr.error("Tên đơn vị không được để trống!", "Lỗi!!!")
+        } else {
+            if ($('#MoTa').val() == '') {
+                toastr.error("Mô tả không được để trống!", "Lỗi!!!")
+            } else {
+                document.getElementById("form_store").submit();
+            }
+        }
+    }
+
+    function EditValidate() {
+        if ($('#TenHinhThucDoanhNghiep_Edit').val() == '') {
+            toastr.error("Tên hình thức doanh nghiệp không được để trống!", "Lỗi!!!")
+        } 
+        else
+        {
+            document.getElementById("form_edit").submit();
+        }
+    }
+
+    function SetEdit(id) {
+        $.ajax({
+            url: '/DmHinhThucDoanhNghiep/Edit',
+            type: 'POST',
+            data: {
+                id: id
+            },
+            dataType: 'JSON',
+            success: function (data) {
+                if (data.status == 'success') {
+                    $('#edit_thongtin').replaceWith(data.message);
+                }
+            }
+        })
+    }
+
+    function SetDelete(Id) {
+        document.getElementById("Id").value = Id;
+    }
+</script>

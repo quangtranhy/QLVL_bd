@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["Title"] = "Cơ sở dữ liệu thông tin nhu cầu tuyển dụng lao động của người sử dụng lao động";
+    int record_id = 1;
+    var Xa = (IEnumerable<QLViecLam.Models.Admin.Systems.DmHanhChinh>)ViewData["Xa"]!;
+    var Huyen = (IEnumerable<QLViecLam.Models.Admin.Systems.DmHanhChinh>)ViewData["Huyen"]!;
+    var tinhtrang = Convert.ToBoolean(ViewData["TinhTrangXacThuc"]);
+    var nganhnghe = (IEnumerable<QLViecLam.Models.Admin.Manages.DanhMuc.DmNganhNghe>)ViewData["DmNganhNghe"]!;
+}
+@model IEnumerable<QLViecLam.Models.Admin.Manages.ThongTinThiTruongLD.Company>
+
+@section custom_style {
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/datatables/bootstrap/dataTables.css" />
+}
+
+@section custom_script {
+    <script type="text/javascript" src="~/Admin/assets/datatables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Admin/assets/datatables/bootstrap/dataTables.bootstrap.js"></script>
+    <script src="~/Admin/assets/datatables/scripts/table-managed.js"></script>
+    <script>
+        $(document).ready(function () {
+            TableManaged.init();
+        });
+
+        $(function () {
+            $('#huyen,#xa, #TinhTrangXacThuc').change(function () {
+                var current_path_url = '/TruyVanThongTinCauLaoDong/VanTinKiemTraXacThucCauLD?';
+                var huyen = '&huyen=' + $('#huyen').val();
+                var xa = '&xa=' + $('#xa').val();
+                var tinhtrang = '&TinhTrangXacThuc=' + $('#TinhTrangXacThuc').val();
+                var url = current_path_url + huyen + xa + tinhtrang;
+                window.location.href = url;
+            })
+        });
+    </script>
+
+}
+
+<div class="card card-custom">
+    <div class="card-header flex-wrap border-0 pt-6 pb-0">
+        <div class="card-title">
+            <h3 class="card-label">
+                Danh sách<small>Danh sách thông tin cầu lao động: </small> <span style="color:indianred;">(@ViewData["Cout"]) hồ sơ</span><br />
+            </h3>
+        </div>        
+    </div>
+    <hr />
+    <div class="card-body">
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="form-group fv-plugins-icon-container">
+                    <label style="font-weight:bold; color:blue">Huyện</label>
+                    @* <select class="form-control" id="Madiaban" name="Madiaban" onchange="updateInput()"> *@
+                    <select class="form-control" id="huyen" name="huyen">
+                        @foreach (var huyen in Huyen)
+                        {
+                            <!option value="@huyen.Name" @((string)ViewData["tenhuyen"]! == huyen.Name ? "selected" : "")>@huyen.Name</!option>
+                        }
+                    </select>
+                </div>
+            </div>            
+            <div class="col-xl-4">
+                <div class="form-group fv-plugins-icon-container">
+                    <label style="font-weight:bold; color:blue">Xã</label>
+                    <select class="form-control" id="xa" name="xa">
+                        @foreach (var xa in Xa)
+                        {
+                            @* <!option value="@xa.id" @((string)ViewData["tenxa"]! == xa.id!.ToString() ? "selected" : "")>@xa.Name</!option> *@
+                            <!option value="@xa.Name" @((string)ViewData["tenxa"]! == xa.Name ? "selected" : "")>@xa.Name</!option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="form-group fv-plugins-icon-container">
+                    <label style="font-weight:bold; color:blue">Ngành nghề</label>
+                    <select class="form-control" id="NganhNghe" name="NganhNghe">
+                        @foreach (var item in nganhnghe)
+                        {
+                            @* <!option value="@xa.id" @((string)ViewData["tenxa"]! == xa.id!.ToString() ? "selected" : "")>@xa.Name</!option> *@
+                            <!option value="@item.MaDm" @((string)ViewData["NganhNghe"]! == item.MaDm ? "selected" : "")>@item.TenDm</!option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="form-group fv-plugins-icon-container">
+                    <label style="font-weight:bold; color:blue">Tình trạng xác thực</label>
+                    <select class="form-control" asp-for="@tinhtrang" id="TinhTrangXacThuc">
+                        <option value="false"> Chưa xác thực </option>
+                        <option value="true"> Đã xác thực </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <table class="table table-striped table-bordered table-hover" id="sample_3">
+            <thead>
+                <tr style="text-align:center">
+                    <th>Stt</th>
+                    <th>Mã ĐKKD</th>
+                    <th>Tên doanh nghiệp</th>
+                    <th>Địa chỉ</th>
+                    <th>Điện thoại</th>
+                    <th>Quy mô</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@(record_id++)</td>
+                            <td>@item.Dkkd</td>
+                            <td>@item.Name</td>
+                            <td>@item.Address</td>
+                            <td>@item.Phone</td>
+                            <td>@item.QuyMo</td>
+                            <td>
+                                <a asp-controller="TruyVanThongTinCauLaoDong" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-sm btn-clean btn-icon" title="Xem thông tin và xác thực">
+                                    <i class="icon-lg la la-eye text-warning"></i>
+                                </a>                                
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>    
+</div>
